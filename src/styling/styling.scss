@@ -1,0 +1,46 @@
+.app {
+    background-color: lightcoral;
+    height: 100vh;
+
+    .areas {
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;  // only applicable to Firefox web browser
+        &::-webkit-scrollbar {
+            display: none;
+        } // for all other browswers
+
+        > * {
+            width: 100vw;
+            height: calc(100vh - 70px);           
+            scroll-snap-align: start; 
+        }
+    }
+}
+
+
+
+.intro {
+    background-color: lightblue;
+}
+
+.contact {
+    background-color: lightpink;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: darkblue;
+    position: fixed; 
+    top: 0;
+    z-index: 2;
+}
+
+.portfolio {
+    background-color: lightgreen;
+}
