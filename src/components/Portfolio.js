@@ -3,7 +3,7 @@ import "../styling/styling.scss"
 
 const Portfolio = () => {
     return(
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
             <h2>Portfolio Page</h2>
         </div>
     )
