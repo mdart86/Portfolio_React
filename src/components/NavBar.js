@@ -5,9 +5,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter';
 
-const NavBar = () => {
+const NavBar = ( {menuOpen, setMenuOpen} ) => {
     return(
-        <div className="nav-bar active">
+        <div className={"nav-bar " + (menuOpen && "active")}>
             <div className="inner-nav-bar">
                 <div className="left-inner-nav-bar">
                     <a href="#intro"className="logo">Michael Dart</a>
@@ -27,12 +27,9 @@ const NavBar = () => {
                             <Twitter className="icon"/>
                             <span>@MichaelDart12</span>
                         </div>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
                 </div>
-                <h1>Hello Left</h1>
                 <div className="right-inner-nav-bar">
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)} >
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
