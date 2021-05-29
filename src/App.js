@@ -7,6 +7,7 @@ import Menu from './components/Menu'
 import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import TechStack from './components/TechStack'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <div className="areas">
           <Intro />
           <Portfolio />
+          <TechStack />
           <Contact />
         </div>
     </div>
