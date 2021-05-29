@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import "../styling/styling.scss"
 
 import PortfolioList from "./PortfolioList"
-import { PortfolioDetails } from "../data/portfolioDetails"
+import { PortfolioIntro, OriginalPortfolio, TerminalApplication, TwoSidedMarketplace } from "../data/portfolioDetails"
 
 const Portfolio = () => {
 const [ selected, setSelected ] = useState("portfolio-intro")
-const [ portfolioDetails, setportfolioDetails ] = useState([])
+const [ portfolioData, setPortfolioData ] = useState([])
 
 
 const portfolioList = [
@@ -30,20 +30,22 @@ const portfolioList = [
 
 useEffect(() => {
     switch(selected){
+        case "portfolio-intro":
+            setPortfolioData(PortfolioIntro);
+            break;
         case "portfolio-website":
-            setportfolioDetails(PortfolioDetails[0]);
+            setPortfolioData(OriginalPortfolio);
             break;
         case "terminal-application":
-            setportfolioDetails(PortfolioDetails[1]);
+            setPortfolioData(TerminalApplication);
             break;
         case "two-sided-marketplace":
-            setportfolioDetails(PortfolioDetails[2]);
+            setPortfolioData(TwoSidedMarketplace);
             break;
         default:
-            // keep an eye on errors re-direction to intro. Coding may need to be changed
+            setPortfolioData(PortfolioIntro);
             break;
     }
-    
 },[selected])
 
 
@@ -52,26 +54,26 @@ useEffect(() => {
             <h1>Portfolio</h1>
                 <ul>
                     {portfolioList.map((item) => (
-                        <PortfolioList 
-                            title={item.title} 
+                        <PortfolioList title={item.title} 
                             active={selected === item.id} 
                             setSelected={setSelected} 
                             id={item.id}
                         />
                     ))}
                 </ul>
+            
             <div className="portfolio-container">
-                {portfolioDetails.map((details) => (
-                    <div className="portfolio-item" id="portfolio-intro">
-                        <img 
-                            src={details.img}
-                            alt="michaelandmason"
-                        />
-                        <h3>{details.title}</h3>
-                    </div>
+                {portfolioData.map((details) => (
+                <div className="portfolio-item">
+                    <img 
+                        src={details.img}
+                        alt="michaelandmason"
+                    />
+                    <h3>{details.title}</h3>
+                </div>
                 ))}
-            </div>  
-        </div>
+            </div>
+        </div>  
     )
 }
 

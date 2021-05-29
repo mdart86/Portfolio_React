@@ -1,4 +1,13 @@
-export const PortfolioDetails = [
+export const PortfolioIntro = [
+    {
+        id: 1,
+        title: "Porfolio Intro", 
+        information: "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef",
+        img: "assets/mnm.jpg",
+    },
+]
+
+export const OriginalPortfolio = [
     {
         id: 1,
         title: "Original Portfolio Website", 
@@ -6,18 +15,24 @@ export const PortfolioDetails = [
         techstack: "HTML, CSS",
         img: "assets/mnm.jpg",
     },
+]
+
+export const TerminalApplication = [  
     {
-        id: 2,
+        id: 1,
         title: "Terminal Application",
         details: "to build a terminal application website",
         techstack: "Ruby",
         img: "assets/mnm.jpg",
-    },
+    }
+]
+
+export const TwoSidedMarketplace = [  
     {
-        id: 3,
+        id: 1,
         title: "Two Sided Marketplace",
         details: "to build a two-sided marketplace website",
         techstack: "Ruby on Rails",
-        img: "assets/mnm.jpg"
+        img: "assets/mnm.jpg",
     },
 ]
