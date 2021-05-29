@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import "../styling/styling.scss"
 
 import PortfolioList from "./PortfolioList"
+import { PortfolioDetails } from "../data/portfolioDetails"
 
 const Portfolio = () => {
 const [ selected, setSelected ] = useState("portfolio-intro")
-const [ portfolioItem, setPortfolioItem ] = useState([])
+const [ portfolioDetails, setportfolioDetails ] = useState([])
 
 
 const portfolioList = [
@@ -27,25 +28,23 @@ const portfolioList = [
     }
 ]
 
-// useEffect(() => {
-//     switch(selected){
-//         case "portfolio-intro":
-//             setPortfolioItem()
-//             break
-//         case "portfolio-website":
-//             setPortfolioItem()
-//             break
-//         case "terminal-application":
-//             setPortfolioItem(portfolioList.id)
-//             break
-//         case "two-sided-marketplace":
-//             setPortfolioItem(portfolioList.id)
-//             break
-//         default:
-//             setPortfolioItem(portfolioList.id)
-//     }
+useEffect(() => {
+    switch(selected){
+        case "portfolio-website":
+            setportfolioDetails(PortfolioDetails[0]);
+            break;
+        case "terminal-application":
+            setportfolioDetails(PortfolioDetails[1]);
+            break;
+        case "two-sided-marketplace":
+            setportfolioDetails(PortfolioDetails[2]);
+            break;
+        default:
+            // keep an eye on errors re-direction to intro. Coding may need to be changed
+            break;
+    }
     
-// },[selected])
+},[selected])
 
 
     return(
@@ -53,7 +52,8 @@ const portfolioList = [
             <h1>Portfolio</h1>
                 <ul>
                     {portfolioList.map((item) => (
-                        <PortfolioList title={item.title} 
+                        <PortfolioList 
+                            title={item.title} 
                             active={selected === item.id} 
                             setSelected={setSelected} 
                             id={item.id}
@@ -61,22 +61,15 @@ const portfolioList = [
                     ))}
                 </ul>
             <div className="portfolio-container">
-                <div className="portfolio-item" id="portfolio-intro">
-                    <img src="assets/mnm.jpg" alt="michaelandmason"/>
-                    <h3>Portfolio Intro</h3>
-                </div>
-                <div className="portfolio-item" id="portfolio-website">
-                    <img src="assets/mnm.jpg" alt="michaelandmason"/>
-                    <h3>Original Portfolio Website</h3>
-                </div>
-                <div className="portfolio-item" id="terminal-application">
-                    <img src="assets/mnm.jpg" alt="michaelandmason"/>
-                    <h3>Terminal Application</h3>
-                </div>
-                <div className="portfolio-item" id="two-sided-marketplace">
-                    <img src="assets/mnm.jpg" alt="michaelandmason"/>
-                    <h3>Two Sided Marketplace</h3>
-                </div>
+                {portfolioDetails.map((details) => (
+                    <div className="portfolio-item" id="portfolio-intro">
+                        <img 
+                            src={details.img}
+                            alt="michaelandmason"
+                        />
+                        <h3>{details.title}</h3>
+                    </div>
+                ))}
             </div>  
         </div>
     )
