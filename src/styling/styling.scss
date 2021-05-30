@@ -360,7 +360,7 @@
            transform: scale(1.25);
            transition: transform .5s ease-out;
            // check out to alter image to ease back in nicely rather than snap back
-           cursor: pointer;
+           cursor: pointer;        
         }
     }
 }
@@ -389,47 +389,31 @@
         h2 {
             font-size: 30px;
         }
-        form {
-            width: 70%;
-            height: 70%;
+        
+        .contact-me-button{
             display: flex;
-            flex-direction: column;
             align-items: center;
+            width: 175px;
+            border: white; 
+            background-color: purple;
+            border: 5px solid black;
+            justify-content: space-around;
+            margin: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            border-radius: 5px;
+             
 
-            input{
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
-                font-weight: 400;
-                margin-bottom: 15px;
-            }
-
-            textarea {
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-                font-weight: 400;
-                margin-bottom: 15px;
-            }
-
-            button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: orange;
+            &:hover{
+                background-color: rgb(230, 64, 230) ;
+                transition: transform .75s ease-out;
                 cursor: pointer;
-                border-radius: 5px;
-                font-weight: 400;
-                border: none;
-
-                &:focus{
-                    outline: none;
-                }
             }
-
-            span{
-                color: green;
-            }
+            
+            
         }
+
     }
 }
