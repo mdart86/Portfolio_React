@@ -2,7 +2,7 @@ export const PortfolioIntro = [
     {
         id: 1,
         title: "Porfolio Intro", 
-        information: "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef",
+        description: "Since my journey begin in 2020, I have embarked on 3 projects within my course that had to meet certin criteria. With each project, came a new challenge, with new technologies introduced, learning new concepts and expanding my skill-set.",
         img: "assets/mnm.jpg",
     },
 ]
@@ -11,8 +11,8 @@ export const OriginalPortfolio = [
     {
         id: 1,
         title: "Original Portfolio Website", 
-        details: "to build a portfolio website",
-        techstack: "HTML, CSS",
+        description: "This was my first project within the tech world. I was tasked with creating a portfolio website",
+        techstack: "HTML (for structure) and CSS (for styling)",
         img: "assets/mnm.jpg",
     },
 ]
@@ -21,7 +21,7 @@ export const TerminalApplication = [
     {
         id: 1,
         title: "Terminal Application",
-        details: "to build a terminal application website",
+        description: "to build a terminal application website",
         techstack: "Ruby",
         img: "assets/mnm.jpg",
     }
@@ -31,7 +31,7 @@ export const TwoSidedMarketplace = [
     {
         id: 1,
         title: "Two Sided Marketplace",
-        details: "to build a two-sided marketplace website",
+        description: "to build a two-sided marketplace website",
         techstack: "Ruby on Rails",
         img: "assets/mnm.jpg",
     },

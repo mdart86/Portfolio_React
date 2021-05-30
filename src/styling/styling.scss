@@ -1,3 +1,4 @@
+// Main App Styling - START
 .app {
     background-color: lightcoral;
     height: 100vh;
@@ -22,7 +23,9 @@
         }
     }
 }
+// Main App Styling - END
 
+// Nav Bar Styling - START
 .nav-bar {
     width: 100%;
     height: 70px;
@@ -94,6 +97,7 @@
         color: white;
         overflow: hidden;
 
+// Hamburger Menu Styling - START
         .hamburger{
             span{
                 &:first-child{
@@ -117,7 +121,10 @@
     }
 
 }
+// Hamburger Menu Styling - END
+// Nav Bar Styling - END
 
+// Menu Styling - START
 .menu {
     width: 300px;
     height: 100vh;
@@ -161,6 +168,7 @@
         }
     }
 }
+// Menu Styling - END
 
 .intro{
     background-color: white;    

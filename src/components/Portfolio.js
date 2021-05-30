@@ -63,14 +63,20 @@ useEffect(() => {
                 </ul>
             
             <div className="portfolio-container">
-                {portfolioData.map((details) => (
-                <div className="portfolio-item">
-                    <img 
-                        src={details.img}
-                        alt="michaelandmason"
-                    />
-                    <h3>{details.title}</h3>
-                </div>
+                {portfolioData.map((item) => (
+                    <div className="portfolio-item">
+                        <img 
+                            src={item.img}
+                            alt="michaelandmason"
+                        />
+                        <h3>{item.title}</h3>
+                    </div>
+                 ))}
+                {portfolioData.map((item) => (
+                    <div className="portfolio-item-details">
+                      <p>{item.description}</p>
+                      <p>{item.techstack ? item.techstack : ""}</p>
+                    </div>
                 ))}
             </div>
         </div>  
