@@ -4,6 +4,8 @@ export const PortfolioIntro = [
         title: "Porfolio Intro", 
         description: "Since my journey begin in 2020, I have embarked on 3 projects within my course that had to meet certin criteria. With each project, came a new challenge, with new technologies introduced, learning new concepts and expanding my skill-set.",
         img: "assets/mnm.jpg",
+        link: "https://github.com/mdart86",
+        linklabel: "Github"
     },
 ]
 
