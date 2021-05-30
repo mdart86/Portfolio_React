@@ -78,6 +78,11 @@ useEffect(() => {
                       <p>{item.techstack ? item.techstack : ""}</p>
                     </div>
                 ))}
+                {portfolioData.map((item) => (
+                    <div className="portfolio-item-details">
+                      <a href={item.link}><button>{item.linklabel}</button></a>
+                    </div>
+                ))}
             </div>
         </div>  
     )

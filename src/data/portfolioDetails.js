@@ -14,6 +14,8 @@ export const OriginalPortfolio = [
         description: "This was my first project within the tech world. I was tasked with creating a portfolio website",
         techstack: "HTML (for structure) and CSS (for styling)",
         img: "assets/mnm.jpg",
+        link: "https://github.com/mdart86/Portfolio_Website",
+        linklabel: "Github"
     },
 ]
 
