@@ -2,6 +2,10 @@ import React from 'react'
 import { SiMinutemailer, SiGithub, SiLinkedin } from "react-icons/si";
 // import { Button } from 'react-bootstrap';
 import "../styling/styling.scss"
+// import ContactMailIcon from '@material-ui/icons/ContactMail';
+// import GitHubIcon from '@material-ui/icons/GitHub';
+// import InstagramIcon from '@material-ui/icons/Instagram';
+// import Twitter from '@material-ui/icons/Twitter';
 
 
 const Contact = () => {
@@ -31,6 +35,22 @@ const Contact = () => {
                         <p className="pr-2">LinkedIn</p>
                         <SiLinkedin className="contact-me-text"/>
                     </a>
+                    {/* <div className="item-container">
+                            <ContactMailIcon className="icon" />
+                            <span>mdart86@hotmail.com</span>
+                        </div>
+                        <div className="item-container">
+                            <GitHubIcon className="icon"/>
+                            <span>mdart86</span>
+                        </div>
+                        <div className="item-container">
+                            <InstagramIcon className="icon" />
+                            <span>mdart86</span>
+                        </div>
+                        <div className="item-container">
+                            <Twitter className="icon"/>
+                            <span>@MichaelDart12</span>
+                    </div> */}
                 </div>
         </div>
     )

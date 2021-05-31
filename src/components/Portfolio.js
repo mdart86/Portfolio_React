@@ -80,7 +80,7 @@ useEffect(() => {
                 ))}
                 {portfolioData.map((item) => (
                     <div className="portfolio-item-details">
-                      <a href={item.link}><button>{item.linklabel}</button></a>
+                      <a href={item.link} target="_blank" rel="noopener noreferrer"><button>{item.linklabel}</button></a>
                     </div>
                 ))}
             </div>
