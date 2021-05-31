@@ -43,6 +43,7 @@
         .left-inner-nav-bar {
             display: flex;
             align-items: center;
+            margin-bottom: 30px;
 
             .logo{
                 font-size: 60px;
@@ -86,6 +87,11 @@
     
     &.active{
         background-color: darkblue;
+
+        h2 {
+            background-color: white;
+            color: white;
+        }
 
         .hamburger{
             span{

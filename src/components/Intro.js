@@ -1,9 +1,6 @@
 import React from 'react'
 import "../styling/styling.scss"
 
-
-
-
 const Intro = () => {
     return(
         <div className="intro" id="intro">
