@@ -6,7 +6,7 @@
         width: 100%;
         height: calc(100vh - 90px);
         position: relative;
-        top: 70px;
+        top: 90px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;  // only applicable to Firefox web browser
@@ -18,6 +18,7 @@
             width: 100vw;
             height: calc(100vh - 90px);           
             scroll-snap-align: start; 
+            
         }
     }
 }
@@ -31,6 +32,7 @@
     top: 0;
     z-index: 3;
     transition: all 1s ease;
+    overflow: hidden;
 
     .inner-nav-bar{
         padding: 10px 30px;
@@ -43,19 +45,28 @@
             align-items: center;
 
             .logo{
-                font-size: 40px;
-                font-weight: 700;
+                font-size: 60px;
+                font-family: 'Gayathri';
                 text-decoration: none;
-                color: inherit;
+                color: rgb(255, 170, 12);
                 margin-right: 40px;
             }
+        
+            h2 {
+                font-size: 40px;
+                font-family: 'Gayathri';
+                color: blue;
+            } 
         }
 
+
+// Hamburger Menu Styling - START
         .right-inner-nav-bar {
 
             .hamburger {
-                width: 40px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
+                margin-bottom: 55px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -65,19 +76,17 @@
 
             span {
                width: 100px;
-               height: 3px;
+               height: 4px;
                background-color: darkblue; 
                transform-origin: left;
                transition: all 5s ease;
             }
         }
     }
-
+    
     &.active{
         background-color: darkblue;
-        color: white;
 
-// Hamburger Menu Styling - START
         .hamburger{
             span{
                 &:first-child{
@@ -86,7 +95,7 @@
                 }
 
                 &:nth-child(2){
-                    background-color: orange;
+                    background-color: rgb(255, 170, 12);
                     transform: rotate(1080deg);
                 }
 
@@ -101,8 +110,6 @@
     }
 
 }
-
-
 // Hamburger Menu Styling - END
 // Nav Bar Styling - END
 
@@ -122,31 +129,31 @@
     transition: all 1s ease;
     text-decoration: none;
 
-
     &.active{
         right: 0;
+
     }
 
     ul{
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 30px;
-        font-weight: 300;
+        font-size: 25px;
         color: white;
         width: 60%;
     }
 
     li{
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+        
         a{
-            font-size: inherit;
+            font-family: 'Chango', cursive;
             color: inherit;
             text-decoration: none;
         }
 
         &:hover{
-            font-weight: 600;
+            color: rgb(255, 170, 12);
         }
     }
 }
@@ -180,14 +187,14 @@
         flex: 0.5;
         position: relative;
 
-        .intro-text{
-            width: 100%;
-            height: 100%;
-            padding-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        // .intro-text{
+        //     width: 100%;
+        //     height: 100%;
+        //     padding-left: 50px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        // }
 
         h1 {
             font-size: 60px;
