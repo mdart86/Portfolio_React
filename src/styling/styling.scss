@@ -177,13 +177,15 @@
             float: left;
 
             img {
-                height: 100%;            
-                border-radius: 50%;
+                height: 75%;            
+                border-radius: 30%;
             }
         }
     }
 
     .right-intro {
+
+        margin-top: 100px;
         flex: 0.5;
         position: relative;
 
@@ -197,22 +199,21 @@
         // }
 
         h1 {
+          
+            font-family: 'Gayathri';
+            color: rgb(255, 170, 12);
             font-size: 60px;
             margin: 10px 0;
         }
 
-        h2 {
-            font-size: 35px;
-        }
-
-        h3 {
-            font-size: 30px;
-
-            span{
-                font-size: inherit;
-                color: lawngreen;
+        .intro-div {
+            flex: inherit;
+            
+            p {
+             width: 500px;
             }
         }
+
 
         a {
             position: absolute;
