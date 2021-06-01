@@ -84,6 +84,7 @@ useEffect(() => {
                     </div>
                 ))}
             </div>
+            <a href="#techstack"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-portfolio" /></a>
         </div>  
     )
 }
