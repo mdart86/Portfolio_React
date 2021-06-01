@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../styling/styling.scss"
+// import { SiGithub } from "react-icons/si";
 
 import PortfolioList from "./PortfolioList"
 import { PortfolioIntro, OriginalPortfolio, TerminalApplication, TwoSidedMarketplace } from "../data/portfolioDetails"
@@ -64,10 +65,10 @@ useEffect(() => {
             
             <div className="portfolio-container">
                 {portfolioData.map((item) => (
-                    <div className="portfolio-item">
+                    <div className="portfolio-banner">
                         <img 
                             src={item.img}
-                            alt="michaelandmason"
+                            alt="portfolio-banner"
                         />
                         <h3>{item.title}</h3>
                     </div>
@@ -79,7 +80,7 @@ useEffect(() => {
                     </div>
                 ))}
                 {portfolioData.map((item) => (
-                    <div className="portfolio-item-details">
+                    <div className="portfolio-item-button">
                       <a href={item.link} target="_blank" rel="noopener noreferrer"><button>{item.linklabel}</button></a>
                     </div>
                 ))}

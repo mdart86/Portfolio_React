@@ -242,7 +242,6 @@
 
 
 .portfolio {
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,22 +253,38 @@
     }
 
     ul{
+        font-family: 'Gayathri';
+        font-size: 20px;
         margin: 10px;
-        padding: 0;
         list-style: none;
         display: flex;
 
         // Component: PortfolioList - START
         .portfolio-list{
-            font-size: 14px;
-            margin-right: 50px;
-            padding: 7px;
+            display: flex;
+            font-size: 25px;
+            margin: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
             border-radius: 10px;
             cursor: pointer;
+            align-items: center;
+            justify-content: center;
 
             &.active{
-                background-color: darkblue;
+                background-color: rgb(43, 43, 255);
                 color: white;
+                transition: all .5 ease;
+
+                &:hover{
+                    color:  rgba(52, 221, 0, 0.87);
+                }
+            }
+
+            &:hover{
+                color: rgb(255, 170, 12);
             }
         }
         // Component: PortfolioList - END
@@ -284,18 +299,18 @@
         flex-direction: row;
         flex-wrap: wrap;
     
-        .portfolio-item {
+        .portfolio-banner {
             width: 300px;
-            height: 220px;
+            height: 250px;
             border-bottom: 20px;
             border: 5px solid black;
             margin: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: 'Andika New Basic', sans-serif;
             color: white;
             position: relative;
-            transition: all .5 ease;
             cursor: pointer;
             border-radius: 10px;
     
@@ -312,7 +327,8 @@
             }
 
             &:hover{
-                background-color: darkblue;
+                background-color: rgb(43, 43, 255);
+                transition: all 3s ease;
 
                 img{
                     opacity: 0.2;
@@ -320,9 +336,20 @@
                 }
 
             }
+
+        
         }
     }
     
+
+    .portfolio-item-details{
+        p{
+            margin: 10px;
+            font-family: 'Andika New Basic', sans-serif;
+            text-align: center;
+        }
+
+    }
     .arrow-image-portfolio {
         bottom: 20px;
         left: 15%;
