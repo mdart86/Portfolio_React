@@ -140,7 +140,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 25px;
+        font-size: 23px;
         color: white;
         width: 60%;
     }
@@ -339,6 +339,21 @@
 
         
         }
+    
+        .portfolio-item-button {
+
+            img {
+                width: 50px;
+                height: 50px;
+
+                &:hover {
+                    background-color:  rgba(52, 221, 0, 0.87);
+                    border-radius: 50%;
+                }
+            }
+        }
+    
+    
     }
     
 
