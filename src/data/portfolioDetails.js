@@ -32,6 +32,7 @@ export const TerminalApplication = [
         presentation: "assets/presentations/terminal_application_preso.pdf",
         img1: "assets/portfolio_screenshots/terminal_application_screenshot_1.png",
         img2:  "assets/portfolio_screenshots/terminal_application_screenshot_2.png",
+        link: "https://github.com/mdart86/Ruby_Terminal_Application",
     }
 ]
 
