@@ -71,7 +71,6 @@ useEffect(() => {
                         </div>
                     ))}
                 </div>
-            
                 <div className="portfolio-details-container">
                 {portfolioData.map((item) => (
                     <div className="portfolio-item-details">
