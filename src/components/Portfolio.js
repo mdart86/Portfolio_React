@@ -64,30 +64,58 @@ useEffect(() => {
                 </ul>
             
             <div className="portfolio-container">
-                {portfolioData.map((item) => (
-                    <div className="portfolio-banner">
-                        <img 
-                            src={item.img}
-                            alt="portfolio-banner"
-                        />
-                        <h3>{item.title}</h3>
-                    </div>
-                 ))}
+                <div className="portfolio-image-container">
+                    {portfolioData.map((item) => (
+                        <div className="portfolio-banner">
+                            <a href={item.presentation ? item.presentation : ""} target="_blank" rel="noopener noreferrer"><img classname="image-1" src={item.img1} alt="portfolio-pic" /></a>
+                            <h3>{item.title}</h3>
+                        </div>
+                    ))}
+                </div>
+            
+                <div className="portfolio-details-container">
                 {portfolioData.map((item) => (
                     <div className="portfolio-item-details">
-                      <p>{item.description}</p>
-                      <p>{item.techstack ? item.techstack : ""}</p>
+                        <div className="portfolio-description">
+                          <p>{item.description}</p>
+                        </div>
+                        <div className="portfolio-tech-stack">
+                            <h3>{item.techstack ? <h3>Techstack:</h3> : ""}</h3> 
+                            <p>{item.techstack ? item.techstack : ""}</p>
+                        </div>
+                        <div className="portfolio-tech-tools">
+                            <h3>{item.techtools ? <h3>Techtools:</h3> : ""}</h3> 
+                            <p>{item.techtools ? item.techtools : ""}</p>
+                        </div>
                     </div>
                 ))}
+                </div>
+            </div>
+            <div className="portfolio-item-button">
                 {portfolioData.map((item) => (
-                    <div className="portfolio-item-button">
-                      <a href={item.link} target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github-100.png" alt="github-log" /></a>
-                    </div>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github-100.png" alt="github-log"/></a>
                 ))}
             </div>
-            <a href="#techstack"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-portfolio" /></a>
+            <div className="arrow-image-portfolio">
+                <a href="#techstack"><img src="assets/icons8-expand-arrow-100.png" alt="arrow"  /></a>
+            </div>
         </div>  
     )
 }
 
 export default Portfolio
+
+
+
+
+///test code for conditional rendering
+// if ({item.img1}) {
+//     <img 
+//      src={item.img1}
+//      alt="portfolio-banner"
+//      />
+// }
+// if ({item.img2})
+// { item.img1 && item.img2 ?  
+
+// }

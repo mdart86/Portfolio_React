@@ -35,6 +35,8 @@ const Contact = () => {
                         <p className="pr-2">LinkedIn</p>
                         <SiLinkedin className="contact-me-text"/>
                     </a>
+{/* add medium link */}
+
                     {/* <div className="item-container">
                             <ContactMailIcon className="icon" />
                             <span>mdart86@hotmail.com</span>

@@ -19,6 +19,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div className="areas">
           <Intro />
+          {/* <div className="area-portfolio"></div> */}
           <Portfolio />
           <TechStack />
           <Contact />
