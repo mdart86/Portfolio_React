@@ -89,11 +89,11 @@ useEffect(() => {
                 ))}
                 </div>
             </div>
-            <div className="portfolio-item-button">
-                {portfolioData.map((item) => (
-                    <a href={item.link} target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github-100.png" alt="github-log"/></a>
-                ))}
-            </div>
+                <div className="portfolio-item-button">
+                    {portfolioData.map((item) => (
+                        <a href={item.link} target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github-100.png" alt="github-log"/></a>
+                    ))}
+                </div>
             <div className="arrow-image-portfolio">
                 <a href="#techstack"><img src="assets/icons8-expand-arrow-100.png" alt="arrow"  /></a>
             </div>

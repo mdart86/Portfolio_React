@@ -42,7 +42,7 @@ export const TwoSidedMarketplace = [
         title: "Two Sided Marketplace",
         description: "My third project was to create a two-sided marketplace. One of the key criteria was to ensure it had full CRUD (Create, Read, Update and Delete) functionalities.",
         techstack: "HTML, Ruby and Ruby on Rails (framework)",
-        techtools: "VS Code (for coding), Heroku (for deployment)",
+        techtools: "VS Code (for coding), Balsamiq (for Wireframes), Diagrams.net (for Entity Relationship Design (or ERD)), Heroku (for deployment)",
         presentation: "assets/presentations/marketplace_preso.pptx",
         img1: "assets/portfolio_screenshots/twosided-marketplace-screenshot_1.png",
         img2:  "assets/portfolio_screenshots/twosided-marketplace-screenshot_2.png",

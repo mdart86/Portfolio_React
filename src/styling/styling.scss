@@ -387,16 +387,17 @@
             }
 
         }
-        .arrow-image-portfolio {
-            margin: 10px;
-            animation: textBlink 4s infinite; 
-            justify-content: center;
-            overflow: hidden;
 
-            @keyframes textBlink {
-                100%{
-                opacity: 0;
-                }
+    }
+    .arrow-image-portfolio {
+        margin: 10px;
+        animation: textBlink 4s infinite; 
+        justify-content: center;
+        overflow: hidden;
+
+        @keyframes textBlink {
+            100%{
+            opacity: 0;
             }
         }
     }
@@ -408,18 +409,24 @@
     flex-direction: column;
     align-items: center;
 
-    h1 {
-        font-family: 'Chango';
-        color:  rgba(52, 221, 0, 0.87);
-        font-size: 50px;
+    .techstack-title {
         overflow: hidden;
-        padding: 10px;;
+
+        h1 {
+            font-family: 'Chango';
+            color:  rgba(52, 221, 0, 0.87);
+            font-size: 50px;
+        }
+
     }
 
-    p {
-      padding: 30px;
-      overflow: hidden;
-    }
+  
+
+        p {
+        font-family: 'Andika New Basic', sans-serif;
+        padding: 30px;
+        overflow: hidden;
+        }
 
     .techstack-container{
     display: flex;
@@ -427,7 +434,7 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 50%;
     overflow: hidden;
     }
 
@@ -437,7 +444,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding: 30px;
     }
     
     a {
@@ -446,7 +452,7 @@
 
     img{
         width: 120px;
-        padding: 50px;
+        padding: 30px;
 
         &:hover{
            transform: scale(1.25);
@@ -455,6 +461,19 @@
            cursor: pointer;        
         }
         
+    }
+
+    .arrow-image-techstack {
+        margin-bottom: 20px;
+        animation: textBlink 4s infinite; 
+        justify-content: center;
+        overflow: hidden;
+
+        @keyframes textBlink {
+            100%{
+            opacity: 0;
+            }
+        }
     }
 }
 
