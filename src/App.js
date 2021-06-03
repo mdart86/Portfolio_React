@@ -6,7 +6,7 @@ import NavBar from './components/NavBar'
 import Menu from './components/Menu'
 import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
+import Connect from './components/Connect'
 import TechStack from './components/TechStack'
 
 
@@ -22,7 +22,7 @@ function App() {
           {/* <div className="area-portfolio"></div> */}
           <Portfolio />
           <TechStack />
-          <Contact />
+          <Connect />
         </div>
     </div>
   );

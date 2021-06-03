@@ -17,23 +17,23 @@ const Contact = () => {
     // }
 
     return(
-        <div className="contact" id="contact">
-            <div className="left-contact">
+        <div className="connect" id="connect">
+            <div className="left-connect">
                 <img src="assets/diana-polekhina-1ixT36dfuSQ-unsplash.jpg" alt="new-message-icon"/>
             </div>
-                <div className="right-contact">
+                <div className="right-connect">
                     <h2>Lets connect and do some great things together</h2>
-                    <a href="mailto: mdart86@hotmail.com" className="contact-me-button">
+                    <a href="mailto: mdart86@hotmail.com" className="connect-me-button">
                         <p className="pr-2">Email</p>
-                        <SiMinutemailer className="contact-me-text" />
+                        <SiMinutemailer className="connect-me-text" />
                     </a>
-                    <a href="https://github.com/mdart86" target="_blank" rel="noopener noreferrer" className="contact-me-button">
+                    <a href="https://github.com/mdart86" target="_blank" rel="noopener noreferrer" className="connect-me-button">
                         <p className="pr-2">GitHub</p>
-                        <SiGithub className="contact-me-text"/>
+                        <SiGithub className="connect-me-text"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/michael-dart-537a3b57/" target="_blank" rel="noopener noreferrer" className="contact-me-button">
+                    <a href="https://www.linkedin.com/in/michael-dart-537a3b57/" target="_blank" rel="noopener noreferrer" className="connect-me-button">
                         <p className="pr-2">LinkedIn</p>
-                        <SiLinkedin className="contact-me-text"/>
+                        <SiLinkedin className="connect-me-text"/>
                     </a>
 {/* add medium link */}
 

@@ -463,6 +463,7 @@
         
     }
 
+
     .arrow-image-techstack {
         margin-bottom: 20px;
         animation: textBlink 4s infinite; 
@@ -478,11 +479,11 @@
 }
 
 
-.contact {
+.connect {
     background-color: lightpink;
     display: flex;
 
-    .left-contact{
+    .left-connect{
         flex: 1;
         overflow: hidden;
         // align-items: left; move image over to left currently not working
@@ -492,7 +493,7 @@
         }
     }
     
-    .right-contact{
+    .right-connect{
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -503,7 +504,7 @@
             font-size: 30px;
         }
         
-        .contact-me-button{
+        .connect-me-button{
             display: flex;
             align-items: center;
             width: 175px;
