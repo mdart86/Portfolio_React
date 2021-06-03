@@ -19,7 +19,9 @@ const TechStack = () => {
                         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-react-160.png" alt="react-logo" className="techstack-img" data-tip="React.js"/></a>
                         <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-ruby-on-rails-96.png" alt="rubyonrails-logo" className="techstack-img" data-tip="Ruby on Rails"/></a>
                         <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-ruby-programming-language-96.png" alt="ruby-logo" className="techstack-img" data-tip="Ruby"/></a>
-                        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-visual-studio-code-2019-96.png" alt="vs-code-logo" className="techstack-img" data-tip="VS Code"/></a>
+                        <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-git-96.png" alt="git-logo" className="techstack-img" data-tip="Git"/></a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github-96.png" alt="git-hub-logo" className="techstack-img" data-tip="Git Hub"/></a>
+                        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-visual-studio-code-2019-96.png" alt="vs-code-logo" className="techstack-img" data-tip="Visual Studio Code"/></a>
                     </div>
                 </div>
             <div className="arrow-image-techstack">

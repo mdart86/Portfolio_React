@@ -404,7 +404,6 @@
 }
 
 .techstack {
-    background-color: lightblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,11 +438,12 @@
     }
 
     .techstackitems {
-        width: 100%;
+        width: 65%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     
     a {
@@ -480,48 +480,45 @@
 
 
 .connect {
-    background-color: lightpink;
     display: flex;
 
     .left-connect{
-        flex: 1;
+        flex: .7;
         overflow: hidden;
         // align-items: left; move image over to left currently not working
 
         img {
-            height: 100%;
+            border-radius: 15px;
+            margin: 75px;
+            height: 80%;
         }
     }
     
     .right-connect{
-        flex: 1;
+        flex: .3;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        margin-right: 200px;
 
-        h2 {
-            font-size: 30px;
-        }
-        
         .connect-me-button{
             display: flex;
             align-items: center;
-            width: 175px;
-            border: white; 
-            background-color: purple;
-            border: 5px solid black;
+            width: 275px;
+            background-color: rgb(43, 43, 255);
+            border: 3px solid rgb(255, 170, 12);
             justify-content: space-around;
             margin: 20px;
             text-decoration: none;
             color: white;
             font-size: 24px;
-            font-weight: 300;
+            font-family: 'Andika New Basic', sans-serif;
             border-radius: 5px;
              
 
             &:hover{
-                background-color: rgb(230, 64, 230) ;
+                background-color: white ;
+                color: rgb(255, 170, 12);
                 transition: transform .75s ease-out;
                 cursor: pointer;
             }
