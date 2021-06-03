@@ -6,8 +6,8 @@ import NavBar from './components/NavBar'
 import Menu from './components/Menu'
 import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
-import Connect from './components/Connect'
 import TechStack from './components/TechStack'
+import Connect from './components/Connect'
 
 
 function App() {

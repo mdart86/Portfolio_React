@@ -17,11 +17,13 @@ const Menu = ( {menuOpen, setMenuOpen} ) => {
                 </li>              
                 <li onClick={() => setMenuOpen(false)}>
                     <a href="#connect">Connect</a>
-                </li>              
-            </ul>               
+                </li>         
+            </ul>      
+            <div className="copyright">
+                <img src="assets/icons8-copyright-52.png" alt="copyright"></img><p>Michael Dart<br></br> 2021</p>
+            </div>              
         </div>
     )
-
 }
 
 export default Menu

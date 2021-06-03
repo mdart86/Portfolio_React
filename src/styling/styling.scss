@@ -18,7 +18,6 @@
             width: 100vw;
             height: calc(100vh - 90px);           
             scroll-snap-align: start; 
-            
         }
 
         // .area-portfolio {
@@ -162,6 +161,23 @@
 
         &:hover{
             color: rgb(255, 170, 12);
+        }
+    }
+    
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+ 
+
+        img {
+            width: 50px;
+        }
+
+        p{
+            color: rgb(255, 170, 12);
+            font-family: 'Andika New Basic', sans-serif;
         }
     }
 }
@@ -329,6 +345,9 @@
                     object-fit: cover;
                     z-index: 2;
 
+                    p {
+                        z-index: 2;
+                    }
 
                     img {
                         width: 100%;
@@ -344,7 +363,7 @@
                         img{
                             opacity: 0.2;
                             z-index: 0;
-                        }
+                        }    
                     }
                 }
 
@@ -482,6 +501,7 @@
 .connect {
     display: flex;
 
+
         .left-connect{
             flex: .7;
             overflow: hidden;
@@ -500,6 +520,7 @@
             flex-direction: column;
             justify-content: center;
             margin-right: 200px;
+            margin-bottom: 50px;
 
             .connect-me-button{
                 display: flex;
@@ -513,7 +534,7 @@
                 color: white;
                 font-size: 24px;
                 font-family: 'Andika New Basic', sans-serif;
-                border-radius: 5px;
+                border-radius: 10px;
                 
 
                 &:hover{
@@ -527,16 +548,18 @@
             }
         }
 
-    .arrow-image-connect {
-        margin-bottom: 20px;
-        animation: textBlink 4s infinite; 
-        justify-content: center;
-        overflow: hidden;
 
-        @keyframes textBlink {
-            100%{
-            opacity: 0;
-            }
-        }
-    }
+
+    // .arrow-image-connect {
+    //     margin-bottom: 20px;
+    //     animation: textBlink 4s infinite; 
+    //     justify-content: center;
+    //     overflow: hidden;
+
+    //     @keyframes textBlink {
+    //         100%{
+    //         opacity: 0;
+    //         }
+    //     }
+    // }
 }

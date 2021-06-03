@@ -26,9 +26,9 @@ const Intro = () => {
                             <br></br>
                             <br></br>
                             <span className="intro-last-line">So, since 2020 my coding journey has begun!</span>                           
-                            </p>            
+                            </p>  
+                            <a href="#portfolio"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-intro" /></a>          
                     </div>
-                <a href="#portfolio"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-intro" /></a>
             </div>
         </div>
     )
