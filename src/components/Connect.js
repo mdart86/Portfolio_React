@@ -1,26 +1,13 @@
 import React from 'react'
 import { SiMinutemailer, SiGithub, SiLinkedin, SiTwitter, SiMedium } from "react-icons/si";
-// import { Button } from 'react-bootstrap';
 import "../styling/styling.scss"
-// import ContactMailIcon from '@material-ui/icons/ContactMail';
-// import GitHubIcon from '@material-ui/icons/GitHub';
-// import InstagramIcon from '@material-ui/icons/Instagram';
-// import Twitter from '@material-ui/icons/Twitter';
-
 
 const Contact = () => {
-    // const [message, setMessage] = useState(false)
-
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     setMessage(true)
-    // }
-
     return(
         <div className="connect" id="connect">
-            <div className="left-connect">
-                <img src="assets/diana-polekhina-1ixT36dfuSQ-unsplash.jpg" alt="new-message-icon"/>
-            </div>
+                <div className="left-connect">
+                    <img src="assets/diana-polekhina-1ixT36dfuSQ-unsplash.jpg" alt="new-message-icon"/>
+                </div>
                 <div className="right-connect">
                     <a href="mailto: mdart86@hotmail.com?subject=Contact from Portfolio site!" className="connect-me-button">
                         <p className="pr-2">Email</p>
@@ -42,24 +29,6 @@ const Contact = () => {
                         <p className="pr-2">@michaeldart12</p>
                         <SiMedium className="connect-me-text"/>
                     </a>
-{/* add medium link */}
-
-                    {/* <div className="item-container">
-                            <ContactMailIcon className="icon" />
-                            <span>mdart86@hotmail.com</span>
-                        </div>
-                        <div className="item-container">
-                            <GitHubIcon className="icon"/>
-                            <span>mdart86</span>
-                        </div>
-                        <div className="item-container">
-                            <InstagramIcon className="icon" />
-                            <span>mdart86</span>
-                        </div>
-                        <div className="item-container">
-                            <Twitter className="icon"/>
-                            <span>@MichaelDart12</span>
-                    </div> */}
                 </div>
         </div>
     )

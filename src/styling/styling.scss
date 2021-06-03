@@ -482,65 +482,61 @@
 .connect {
     display: flex;
 
-    .left-connect{
-        flex: .7;
-        overflow: hidden;
-        // align-items: left; move image over to left currently not working
+        .left-connect{
+            flex: .7;
+            overflow: hidden;
+            // align-items: left; move image over to left currently not working
 
-        img {
-            border-radius: 15px;
-            margin: 75px;
-            height: 80%;
-        }
-    }
-    
-    .right-connect{
-        flex: .3;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 200px;
-
-        .connect-me-button{
-            display: flex;
-            align-items: center;
-            width: 275px;
-            background-color: rgb(43, 43, 255);
-            border: 3px solid rgb(255, 170, 12);
-            justify-content: space-around;
-            margin: 20px;
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
-            font-family: 'Andika New Basic', sans-serif;
-            border-radius: 5px;
-             
-
-            &:hover{
-                background-color: white ;
-                color: rgb(255, 170, 12);
-                transition: transform .75s ease-out;
-                cursor: pointer;
+            img {
+                border-radius: 15px;
+                margin: 100px 100px 100px 200px;
+                height: 70%;
             }
-            
-            
+        }
+    
+        .right-connect{
+            flex: .3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 200px;
+
+            .connect-me-button{
+                display: flex;
+                align-items: center;
+                width: 275px;
+                background-color: rgb(43, 43, 255);
+                border: 3px solid rgb(255, 170, 12);
+                justify-content: space-around;
+                margin: 10px;
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+                font-family: 'Andika New Basic', sans-serif;
+                border-radius: 5px;
+                
+
+                &:hover{
+                    background-color: white ;
+                    color: rgb(255, 170, 12);
+                    transition: transform .75s ease-out;
+                    cursor: pointer;
+                }
+                
+                
+            }
         }
 
-                    // .item-container{
-            //     display: flex;
-            //     align-items: center;
-            //     margin-left: 30px;
+    .arrow-image-connect {
+        margin-bottom: 20px;
+        animation: textBlink 4s infinite; 
+        justify-content: center;
+        overflow: hidden;
 
-            //     .icon {
-            //         font-size: 18px;
-            //         margin-right: 5px;
-
-            //         span {
-            //             font-size: 25px;
-            //             font-weight: 500;
-            //         }
-            //     }
-            // }
-
+        @keyframes textBlink {
+            100%{
+            opacity: 0;
+            }
+        }
     }
 }
