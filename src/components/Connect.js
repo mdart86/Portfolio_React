@@ -15,11 +15,11 @@ const Contact = () => {
                             <SiMinutemailer className="connect-me-text" />
                         </a>
                         <a href="https://github.com/mdart86" target="_blank" rel="noopener noreferrer" className="connect-me-button">
-                            <p className="pr-2">GitHub</p>
+                            <p className="pr-2">mdart86</p>
                             <SiGithub className="connect-me-text"/>
                         </a>
                         <a href="https://www.linkedin.com/in/michael-dart-537a3b57/" target="_blank" rel="noopener noreferrer" className="connect-me-button">
-                            <p className="pr-2">LinkedIn</p>
+                            <p className="pr-2">Michael Dart</p>
                             <SiLinkedin className="connect-me-text"/>
                         </a>
                         <a href="https://twitter.com/MichaelDart12" target="_blank" rel="noopener noreferrer" className="connect-me-button">

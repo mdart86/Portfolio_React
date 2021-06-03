@@ -1,4 +1,5 @@
 import React from 'react'
+// import { , SiGithub, SiLinkedin, SiTwitter, SiMedium } from "react-icons/si";
 import "../styling/styling.scss"
 
 
@@ -20,7 +21,8 @@ const Menu = ( {menuOpen, setMenuOpen} ) => {
                 </li>         
             </ul>      
             <div className="copyright">
-                <img src="assets/icons8-copyright-52.png" alt="copyright"></img><p>Michael Dart<br></br> 2021</p>
+                <p>Copyright &copy;</p>
+                <p>Michael Dart, 2021</p>
             </div>              
         </div>
     )
