@@ -71,7 +71,7 @@ useEffect(() => {
                 <div className="portfolio-image-container">
                     {portfolioData.map((item) => (
                         <div className="portfolio-banner">
-                            <a href={item.presentation ? item.presentation : ""} target="_blank" rel="noopener noreferrer"><img classname="image-1" src={item.img1} alt="portfolio-pic"/>Click for Presentation</a>
+                            <a href={item.presentation ? item.presentation : ""} target="_blank" rel="noopener noreferrer"><p>Click for Presentation</p><img classname="image-1" src={item.img1} alt="portfolio-pic"/></a>
                         </div>
                     ))}
                 </div>

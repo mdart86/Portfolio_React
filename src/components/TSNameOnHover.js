@@ -3,9 +3,9 @@ import "../styling/styling.scss"
 
 const TSNameOnHover = ({id, title, active, setSelected}) => {
     return(
-        <li className={active ? "portfolio-list active" : "portfolio-list"} onClick={() => setSelected(id)}>
+        <h1 className={active ? "portfolio-list active" : "portfolio-list"} onHover={() => setSelected(id)}>
             {title}
-        </li>
+        </h1>
     )
 }
 

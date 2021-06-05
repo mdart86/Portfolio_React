@@ -1,5 +1,17 @@
-# Getting Started with Create React App
+## Further Enhancements 
+1. Hover over image text display for Portfolio section
+2. Hover over icon in Tech area to display tech name
+3. Refactor code - to ensure it is DRY including CSS code to make use of Sass
+4. Move styling for components into own SASS files
 
+## Deployed to using Netlify
+
+![Michael Dart Portfolio]()
+
+
+
+
+# Stockstandard React Code below
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
