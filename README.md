@@ -1,7 +1,8 @@
 ## Further Enhancements 
 1. Hover over image text display for Portfolio section
 2. Hover over icon in Tech area to display tech name
-3. Look at possible code Refactor code - to ensure it is DRY including CSS code to make use of Sass
+3. Add text write from bottom left to top write over image to say "connect with me"
+4. Look at possible code Refactor code - to ensure it is DRY including CSS code to make use of Sass
 
 ## Deployed to using Netlify
 
