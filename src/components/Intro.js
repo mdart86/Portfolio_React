@@ -27,8 +27,10 @@ const Intro = () => {
                             <br></br>
                             <span className="intro-last-line">So, since 2020 my coding journey has begun!</span>                           
                             </p>  
-                            <a href="#portfolio"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-intro" /></a>          
                     </div>
+            </div>
+            <div className="arrow-image-intro">
+                <a href="#portfolio"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-intro" /></a>          
             </div>
         </div>
     )

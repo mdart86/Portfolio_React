@@ -139,7 +139,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 23px;
+        font-size: 30px;
         color: white;
         width: 60%;
     }
@@ -179,7 +179,7 @@
 
 .intro{
     display: flex;
-    
+    height: 90vh;
 
     .left-intro {
         flex: 0.5;
@@ -210,15 +210,6 @@
         flex: 0.5;
         position: relative;
 
-        // .intro-text{
-        //     width: 100%;
-        //     height: 100%;
-        //     padding-left: 50px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-        // }
-
         h1 {
             font-family: 'Chango';
             color:  rgba(52, 221, 0, 0.87);
@@ -240,19 +231,24 @@
                 }
             }
         }
+    }
 
-        .arrow-image-intro {
-            position: absolute;
-            bottom: 20px;
-            left: 15%;
-            animation: textBlink 4s infinite; 
+    .arrow-image-intro {
+        display: flex;
+        height: 10vh;
+        
+            .arrow-image-intro {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                animation: textBlink 4s infinite; 
 
-            @keyframes textBlink {
-                100%{
-                opacity: 0;
+                @keyframes textBlink {
+                    100%{
+                    opacity: 0;
+                    }
                 }
             }
-        }
     }
 }
 
@@ -261,6 +257,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 90vh;
+    overflow: hidden;
 
 
     h1 {
@@ -287,6 +285,8 @@
             cursor: pointer;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+
 
             &.active{
                 background-color: rgb(43, 43, 255);
@@ -312,13 +312,16 @@
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        overflow: hidden;
+
     
         .portfolio-image-container{
             flex: 0.3;
- 
+            overflow: hidden;
+
             .portfolio-banner {
-                width: 300px;
-                height: 250px;
+                width: 400px;
+                height: 350px;
                 border-bottom: 20px;
                 margin:20px;
                 display: flex;
@@ -329,6 +332,7 @@
                 position: relative;
                 cursor: pointer;
                 border-radius: 10px;
+                border: 2px solid rgb(182, 182, 182);
         
                 a {
                     position: absolute;
@@ -354,10 +358,21 @@
                         background-color: rgb(43, 43, 255);
                         transition: all 3s ease;
     
+                        p {
+                            z-index: 0;
+                            color: white;
+                        }
+
                         img{
                             opacity: 0.2;
-                            z-index: 0;
+                            z-index: 1;
                         }    
+
+                        a {
+                            z-index: 2;
+                        }
+
+                        
                     }
                 }
 
@@ -403,7 +418,8 @@
 
     }
     .arrow-image-portfolio {
-        margin: 10px;
+        height: 10vh;
+        margin: 10vh;
         animation: textBlink 4s infinite; 
         justify-content: center;
         overflow: hidden;
