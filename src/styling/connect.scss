@@ -4,22 +4,17 @@
     height: 100vh;
     position: relative;
 
-
         .connect-heading {
             position: absolute;
             margin: 20px;
             display: flex;
             flex-direction: row;
-            border: 2px solid black;
-            justify-content: center;
-            align-items: center;
+            left: 42%;       
 
             h1{
                 font-family: 'Chango';
                 color:  rgba(52, 221, 0, 0.87);
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+                font-size: 50px;
             }
         }
 
