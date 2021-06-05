@@ -1,6 +1,6 @@
 import React from 'react'
 // import { , SiGithub, SiLinkedin, SiTwitter, SiMedium } from "react-icons/si";
-import "../styling/styling.scss"
+import "../styling/menu.scss"
 
 
 const Menu = ( {menuOpen, setMenuOpen} ) => {

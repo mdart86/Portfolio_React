@@ -1,0 +1,60 @@
+.menu {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(43, 43, 255);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    text-decoration: none;
+
+    &.active{
+        right: 0;
+
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        color: white;
+        width: 60%;
+    }
+
+    li{
+        margin-bottom: 30px;
+        
+        a{
+            font-family: 'Gayathri';
+            color: inherit;
+            text-decoration: none;
+        }
+
+        &:hover{
+            color: rgb(255, 170, 12);
+        }
+    }
+    
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+ 
+
+        img {
+            width: 50px;
+        }
+
+        p{
+            color: rgb(255, 170, 12);
+            font-family: 'Andika New Basic', sans-serif;
+        }
+    }
+}

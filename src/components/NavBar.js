@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styling/styling.scss"
+import "../styling/navbar.scss"
 import { init } from 'ityped'
 
 import { useEffect, useRef } from 'react'
@@ -8,6 +8,7 @@ const NavBar = ( {menuOpen, setMenuOpen} ) => {
     
     const textRef = useRef()
 
+    // ityped use effect to show statements in navbar typed along the page... // see strings in useeffect as to what is typed
     useEffect(() => {
         init(textRef.current, {
             showCursor: false,

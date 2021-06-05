@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "../styling/styling.scss"
-// import { SiGithub } from "react-icons/si";
+import "../styling/portfolio.scss"
 
 import PortfolioList from "./PortfolioList"
 import { PortfolioIntro, OriginalPortfolio, TerminalApplication, TwoSidedMarketplace } from "../data/portfolioDetails"

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styling/styling.scss"
+import "../styling/intro.scss"
 
 const Intro = () => {
     return(

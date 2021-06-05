@@ -1,0 +1,72 @@
+.connect {
+    display: flex;
+    height: 90vh;
+
+
+        .left-connect{
+            flex: .7;
+            overflow: hidden;
+            // align-items: left; move image over to left currently not working
+
+            img {
+                border-radius: 15px;
+                margin: 150px 100px 100px 200px;
+                height: 70%;
+            }
+        }
+    
+        .right-connect{
+            flex: .3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 200px;
+            margin-bottom: 50px;
+
+            .connect-me-button{
+                display: flex;
+                align-items: center;
+                width: 275px;
+                background-color: rgb(43, 43, 255);
+                border: 3px solid rgb(255, 170, 12);
+                justify-content: space-around;
+                margin: 10px;
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+                font-family: 'Andika New Basic', sans-serif;
+                border-radius: 10px;
+                
+
+                &:hover{
+                    background-color: white ;
+                    color: rgb(255, 170, 12);
+                    transition: transform .75s ease-out;
+                    cursor: pointer;
+                }
+                
+                
+            }
+
+            .arrow-image-connect {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-top: 75px;
+                           
+                .arrow-image-connect {
+                    left: 50%;
+                    position: absolute;
+                    animation: textBlink 4s infinite; 
+            
+                    @keyframes textBlink {
+                        100%{
+                        opacity: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { SiMinutemailer, SiGithub, SiLinkedin, SiTwitter, SiMedium } from "react-icons/si";
-import "../styling/styling.scss"
+import "../styling/connect.scss"
 
 const Contact = () => {
     return(
