@@ -5,7 +5,6 @@ import "../styling/styling.scss"
 const Contact = () => {
     return(
         <div className="connect" id="connect">
-           
                     <div className="left-connect">
                         <img src="assets/diana-polekhina-1ixT36dfuSQ-unsplash.jpg" alt="new-message-icon"/>
                     </div>
@@ -31,6 +30,9 @@ const Contact = () => {
                             <SiMedium className="connect-me-text"/>
                         </a>
                     </div>
+                <div className="arrow-image-connect">
+                    <a href="#intro"><img src="assets/icons8-collapse-arrow-100.png" alt="arrow" className="arrow-image-connect" /></a>
+                </div>
         </div>
     )
 }

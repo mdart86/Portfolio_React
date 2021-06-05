@@ -6,10 +6,14 @@ import PortfolioList from "./PortfolioList"
 import { PortfolioIntro, OriginalPortfolio, TerminalApplication, TwoSidedMarketplace } from "../data/portfolioDetails"
 
 const Portfolio = () => {
+// state for selected items
 const [ selected, setSelected ] = useState("portfolio-intro")
+
+// state for portfolio data
 const [ portfolioData, setPortfolioData ] = useState([])
 
 
+// 
 const portfolioList = [
     {
         id: "portfolio-intro",
@@ -67,7 +71,7 @@ useEffect(() => {
                 <div className="portfolio-image-container">
                     {portfolioData.map((item) => (
                         <div className="portfolio-banner">
-                            <a href={item.presentation ? item.presentation : ""} target="_blank" rel="noopener noreferrer"><img classname="image-1" src={item.img1} alt="portfolio-pic" />{item.title}</a>
+                            <a href={item.presentation ? item.presentation : ""} target="_blank" rel="noopener noreferrer"><img classname="image-1" src={item.img1} alt="portfolio-pic"/>Click for Presentation</a>
                         </div>
                     ))}
                 </div>
@@ -102,9 +106,6 @@ useEffect(() => {
 }
 
 export default Portfolio
-
-
-
 
 ///test code for conditional rendering
 // if ({item.img1}) {
