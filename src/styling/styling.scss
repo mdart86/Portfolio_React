@@ -559,25 +559,26 @@
                 
                 
             }
-        }
 
-    .arrow-image-connect {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 10vh;
-        position: relative;
-                   
-        .arrow-image-connect {
-            position: absolute;
-            left: 50%;
-            animation: textBlink 4s infinite; 
-    
-            @keyframes textBlink {
-                100%{
-                opacity: 0;
+            .arrow-image-connect {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-top: 75px;
+                           
+                .arrow-image-connect {
+                    left: 50%;
+                    position: absolute;
+                    animation: textBlink 4s infinite; 
+            
+                    @keyframes textBlink {
+                        100%{
+                        opacity: 0;
+                        }
+                    }
                 }
             }
+            
         }
-    }
+
 }

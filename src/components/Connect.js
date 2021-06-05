@@ -29,10 +29,11 @@ const Contact = () => {
                             <p className="pr-2">@michaeldart12</p>
                             <SiMedium className="connect-me-text"/>
                         </a>
+                        <div className="arrow-image-connect">
+                            <a href="#intro"><img src="assets/icons8-collapse-arrow-100.png" alt="arrow" className="arrow-image-connect" /></a>
+                        </div>
                     </div>
-                <div className="arrow-image-connect">
-                    <a href="#intro"><img src="assets/icons8-collapse-arrow-100.png" alt="arrow" className="arrow-image-connect" /></a>
-                </div>
+              
         </div>
     )
 }
