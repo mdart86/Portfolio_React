@@ -23,6 +23,9 @@ const Menu = ( {menuOpen, setMenuOpen} ) => {
             <div className="copyright">
                 <p>Copyright &copy;</p>
                 <p>Michael Dart, 2021</p>
+                <p>---------</p>
+                <p>Thank you to <a href="https://icons8.com/">Icons 8</a></p>
+                <p>for the free icons used here.</p>
             </div>              
         </div>
     )
