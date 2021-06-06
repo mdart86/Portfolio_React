@@ -1,10 +1,23 @@
+@import "./universal.scss";
+
 .intro{
     display: flex;
     height: 90vh;
+    margin-top: 100px;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left-intro {
         flex: 0.5;
         overflow: hidden;
+        
+        @include mobile {
+            flex-direction: column;
+        }
+
 
         .image-container{
             margin-top: 50px;
@@ -15,6 +28,13 @@
             justify-content: center;
             float: left;
 
+            
+            @include mobile {
+                align-items: flex-start;
+                margin-top: 150px;
+                padding-bottom: 10px;
+            }
+
             img {
                 display: flex;
                 align-items: center;
@@ -22,6 +42,11 @@
                 height: 30%;            
                 border-radius: 15%;
                 box-shadow: 0 4px 2px -2px gray;
+
+                @include mobile {
+                    width: 300px;
+                    height: auto;
+                }
             }
         }
     }
@@ -31,19 +56,40 @@
         flex: 0.5;
         position: relative;
 
+        @include mobile {
+            margin-top: 5px;
+        }
+
         h1 {
             font-family: 'Chango';
             color:  rgba(52, 221, 0, 0.87);
             font-size: 60px;
             margin: 10px 0;
+
+            @include mobile {
+                font-size: 2.5rem;
+                text-align: center;
+            }
         }
 
         .intro-div {
             flex: inherit;
+
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+                margin-top: 10px;
+            }
             
             p {
                 width: 500px;
                 font-family: 'Andika New Basic', sans-serif;
+
+                @include mobile {
+                    width: 300px;                    
+                    text-align: center;
+                    font-size: 20px;
+                }
 
                 .intro-last-line {
                     font-size: 23px;
@@ -64,11 +110,23 @@
                 left: 50%;
                 animation: textBlink 4s infinite; 
 
+                @include mobile {
+                    position: relative;
+                    bottom: 20px;
+                    left: 0;
+                }
+
                 @keyframes textBlink {
                     100%{
                     opacity: 0;
                     }
                 }
+            }
+
+            @include mobile {
+                width: 100px;
+                justify-content: center;
+                margin-top: 10px;           
             }
     }
 }
