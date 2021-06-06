@@ -26,6 +26,8 @@ const Menu = ( {menuOpen, setMenuOpen} ) => {
                 <p>---------</p>
                 <p>Thank you to <a href="https://icons8.com/">Icons 8</a></p>
                 <p>for the free icons used here.</p>
+                <p>---------</p>
+                <p class="under-constuction">Tablet and Mobile views are <em><strong>Under Construction</strong></em></p>
             </div>              
         </div>
     )
