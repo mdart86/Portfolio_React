@@ -15,6 +15,11 @@
     transition: all 1s ease;
     text-decoration: none;
 
+    @include mobile {
+        width: 200px;
+        height: 100vh;
+    }
+
     &.active{
         right: 0;
     }
@@ -26,6 +31,11 @@
         font-size: 30px;
         color: white;
         width: 60%;
+
+        @include mobile {
+           font-size: 25px;
+        }
+    
     }
 
     li{
@@ -48,14 +58,15 @@
         justify-content: center;
         margin-top: 200px;
  
-
-        img {
-            width: 50px;
-        }
-
         p{
             color: rgb(255, 170, 12);
             font-family: 'Andika New Basic', sans-serif;
+
+            @include mobile {
+                margin-left: 40px;
+                margin-right: 10px;
+            }
+         
         }
 
         a {
