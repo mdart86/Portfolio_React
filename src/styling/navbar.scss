@@ -81,7 +81,7 @@
     
     &.active{
         background-color: rgb(43, 43, 255);
-        transition: all 1s ease;
+        transition: all 2s ease-out;
         
         .title h2 {
             color:white
