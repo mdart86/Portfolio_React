@@ -5,56 +5,6 @@ import "../styling/techstack.scss"
 
 
 const TechStack = () => {
-    // const [ techStackListData, setTechStackListData ] = useState([])
-
-    // const techStackList = [
-    //     {
-    //         id: "css-logo",
-    //         title: "CSS",
-    //     },
-    //     {
-    //         id: "html-logo",
-    //         title: "HTML",
-    //     },
-    //     {
-    //         id: "javascript-logo",
-    //         title: "JavaScript",
-    //     },
-    //     {
-    //         id: "node-js",
-    //         title: "Node.js",
-    //     },
-    //     {
-    //         id: "postgresql-logo",
-    //         title: "PostgreSQL",
-    //     },
-    //     {
-    //         id: "react-logo",
-    //         title: "Node.js",
-    //     },
-    //     {
-    //         id: "rubyonrails-logo",
-    //         title: "Ruby On Rails",
-    //     },
-    //     {
-    //         id: "ruby-logo",
-    //         title: "Ruby",
-    //     },
-    //     {
-    //         id: "git-logo",
-    //         title: "Git",
-    //     },
-    //     {
-    //         id: "github-logo",
-    //         title: "Git Hub",
-    //     },
-    //     {
-    //         id: "vscode-logo",
-    //         title: "Visual Studio Code",
-    //     }
-    // ]
-    
-  
     // function to create the onhover that matches based on the item
 
   // pass the above function into another function that will render the text

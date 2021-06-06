@@ -1,3 +1,5 @@
+@import "./universal.scss";
+
 .techstack {
     display: flex;
     flex-direction: column;
@@ -48,6 +50,11 @@
     img{
         width: 120px;
         padding: 30px;
+
+        @include mobile {
+            width: 100px;
+            padding: 20px;
+        }
 
         &:hover{
            transform: scale(1.25);
