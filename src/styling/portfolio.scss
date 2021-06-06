@@ -1,3 +1,4 @@
+@import "./universal.scss";
 
 .portfolio {
     display: flex;
@@ -11,6 +12,12 @@
         font-family: 'Chango';
         color:  rgba(52, 221, 0, 0.87);
         font-size: 50px;
+
+        @include mobile {
+            font-size: 2.5rem;
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
     }
 
     ul{
@@ -20,6 +27,16 @@
         list-style: none;
         display: flex;
         overflow: hidden;
+
+        
+        @include mobile {
+            width: 100%;
+            font-size: 15px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
 
         // Component: PortfolioList - START
         .portfolio-list{
@@ -38,6 +55,13 @@
                 background-color: rgb(43, 43, 255);
                 color: white;
                 transition: all .5 ease;
+
+                @include mobile {
+                    height: 20px;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+                }
 
                 &:hover{
                     color:  rgba(52, 221, 0, 0.87);
@@ -60,6 +84,12 @@
         flex-wrap: wrap;
         overflow: hidden;
 
+        
+        @include mobile {
+            width: 100%;
+            flex-direction: column;
+        }
+
     
         .portfolio-image-container{
             flex: 0.3;
@@ -80,6 +110,12 @@
                 border-radius: 10px;
                 border: 2px solid rgb(211, 206, 206);
                 box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
+
+                @include mobile {
+                    width: 130px;
+                    height: 100px;
+                }
+        
         
                 a {
                     position: relative;
