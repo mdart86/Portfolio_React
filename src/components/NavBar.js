@@ -21,8 +21,12 @@ const NavBar = ( {menuOpen, setMenuOpen} ) => {
         <div className={"nav-bar " + (menuOpen && "active")}>
             <div className="inner-nav-bar">
                 <div className="left-inner-nav-bar">
-                    <a href="#intro"className="logo">Michael Dart</a>
-                    <h2>... <span ref={textRef}></span></h2>
+                    <div className="title">
+                        <h2>Michael Dart</h2>
+                    </div>
+                    <div className="ityped-text">
+                        <h2>... <span ref={textRef}></span></h2>
+                    </div>
                 </div>
                 <div className="right-inner-nav-bar">
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)} >
