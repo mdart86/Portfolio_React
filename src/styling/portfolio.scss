@@ -12,6 +12,7 @@
         font-family: 'Chango';
         color:  rgba(52, 221, 0, 0.87);
         font-size: 50px;
+        padding-bottom: 15px;
         overflow: hidden;
 
         @include mobile {
@@ -93,14 +94,18 @@
 
     
         .portfolio-image-container{
-            flex: 0.3;
+            flex: 0.4;
             overflow: hidden;
+            padding: 2px;
+            margin-bottom: 90px;
+            padding-bottom: 40px;
+            display: flex;
 
             .portfolio-banner {
                 width: 400px;
                 height: 350px;
                 border-bottom: 20px;
-                margin:20px;
+                margin: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -172,6 +177,7 @@
             .portfolio-item-button {
                 overflow: hidden;
                 justify-content: center;
+                padding: 30px;
 
                 @include mobile {
                     overflow: hidden;
@@ -196,7 +202,12 @@
             }
 
     .portfolio-details-container {
-        flex: 0.7;
+        flex: 0.6;
+        overflow: hidden;
+        padding: 2px;
+        margin-bottom: 100px;
+        padding-bottom: 50px;
+        display: flex;
     
         .portfolio-item-details{
             h3 {
@@ -215,9 +226,9 @@
         }
 
     }
+
     .arrow-image-portfolio {
         height: 10vh;
-        margin: 10vh;
         animation: textBlink 4s infinite; 
         justify-content: center;
         overflow: hidden;

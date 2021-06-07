@@ -49,13 +49,15 @@
                 overflow: hidden;
                 display: flex;
                 flex-direction: row;
+                margin-bottom: 50px;
+
 
                 // align-items: left; move image over to left currently not working
     
                 img {
                     border-radius: 15px;
                     margin: 150px 100px 100px 200px;
-                    height: 70%;
+                    height: 60%;
                     box-shadow: 0 4px 2px -2px gray;
                 }
             
@@ -73,7 +75,7 @@
                 flex-direction: column;
                 justify-content: center;
                 margin-right: 200px;
-                margin-bottom: 50px;
+                margin-bottom: 100px;
 
                 @include mobile {
                     flex: 1;
