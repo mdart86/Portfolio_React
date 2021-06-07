@@ -10,24 +10,30 @@
     overflow: hidden;
 
     @include mobile {
-        height: 120px;
+        height: 130px;
     }
 
     .inner-nav-bar{
-        padding: 0px 10px;
         display: flex;
+        padding: 0px 10px;
         align-items: center;
         justify-content: space-between;
+        
+        // used for troubleshooting text animation
+        // @include mobile {
+        //     width: 70%;
+        // }
 
         .left-inner-nav-bar {
             display: flex;
             margin-top: -25px;
 
             @include mobile {
-                display: none;
+                margin-right: 50px;
             }
 
             .title{
+                display: flex;
                 font-size: 40px;
                 font-family: 'Gayathri';
                 color: rgb(43, 43, 255);
@@ -35,22 +41,30 @@
                 margin-right: 40px;
 
                 @include mobile {
-                    margin: 0 0 0 0;
-                    font-size: 17px;
-                    flex-direction: column;
+                    // used for troubleshooting text animation
+                    // margin-top: 20px;
+                    // margin-left: 0px;
+                    // margin-right: 0px; 
+                    // flex-direction: column;
+                    // flex-wrap: wrap;
+                    font-size: 20px;
+                    margin-top: 30px
                 }
             }
         
             .ityped-text {
+                display: flex;
                 font-size: 40px;
                 font-family: 'Gayathri';
                 color: rgb(255, 170, 12);
 
                 @include mobile {
-                    width: 25%;
-                    margin: 10px;
-                    font-size: 15px;
-                    flex-direction: column;
+                    display: none;
+                    // used for troubleshooting text animation
+                    // width: 60%;
+                    // margin: 40px;
+                    // font-size: 15px;
+                    // flex-direction: column;
                 }
             } 
         }
@@ -58,6 +72,11 @@
 
 // Hamburger Menu Styling - START
         .right-inner-nav-bar {
+                    
+        // used for troubleshooting text animation
+        // @include mobile {
+        //     width: 30%;
+        // }
 
             .hamburger {
                 width: 45px;
@@ -69,6 +88,10 @@
                 justify-content: space-between;
                 cursor: pointer;
                 overflow: hidden;
+
+                @include mobile {
+                    margin-top: 30px
+                }
             }
 
             span {
