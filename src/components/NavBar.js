@@ -7,7 +7,6 @@ import { useEffect, useRef } from 'react'
 const NavBar = ( {menuOpen, setMenuOpen} ) => {
     
     const textRef = useRef()
-
     // ityped use effect to show statements in navbar typed along the page... // see strings in useeffect as to what is typed
     useEffect(() => {
         init(textRef.current, {
