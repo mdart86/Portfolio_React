@@ -50,6 +50,7 @@
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 50px;
+                padding-bottom: 40px;
 
 
                 // align-items: left; move image over to left currently not working
@@ -57,7 +58,7 @@
                 img {
                     border-radius: 15px;
                     margin: 150px 100px 100px 200px;
-                    height: 60%;
+                    height: 65%;
                     box-shadow: 0 4px 2px -2px gray;
                 }
             
@@ -74,8 +75,9 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-right: 200px;
-                margin-bottom: 100px;
+                margin-bottom: 3rem;
+                margin-right: 6rem;
+                padding-bottom: 40px;
 
                 @include mobile {
                     flex: 1;
