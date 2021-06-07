@@ -130,11 +130,19 @@
                     overflow: hidden;
                     object-fit: cover;
                     z-index: 3;
+                    display: flex;
 
                     p {
                         z-index: 3;
                         opacity: 0;
                         position: absolute;
+                        font-family: 'Andika New Basic', sans-serif;
+                        width: 100%;
+                        height: 75%;                       
+                        object-fit: cover;
+                        font-size: 2rem;
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     img {
@@ -152,20 +160,26 @@
                     &:hover{
                         background-color: rgb(120, 120, 255);
                         transition: all 1s ease-in-out;
+                        display: flex;
     
                         a {
                             z-index: 2;
+                            opacity: 1;                         
                         }  
 
-                        // p {
-                        //     position: relative;
-                        //     opacity: 0.1;
-                        //     z-index: auto;
-                        // }
+                        p {
+                            position: absolute;
+                            display: flex;
+                            opacity: 1;
+                            z-index: auto;
+                            color:  white;
+                            font-weight: 900;   
+                        }
                         
                         img{
                             opacity: 0.2;
                             z-index: 1;
+                            position: relative;
                         }   
                     }
                 }
