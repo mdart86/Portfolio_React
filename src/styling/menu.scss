@@ -22,6 +22,12 @@
     @include mobile {
         width: 200px;
         height: 100vh;
+        
+        &.active{
+            display: flex;
+            z-index: 2;
+        }
+    
     }
 
     ul{

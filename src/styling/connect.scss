@@ -7,10 +7,7 @@
     position: relative;
 
     @include mobile {
-       flex-direction: column;
-       flex-wrap: wrap;
        margin-top: 50px;
-       border: black 2px solid;
     }
 
         .connect-heading {
@@ -21,11 +18,11 @@
             left: 42%;       
 
             @include mobile {
+                left: 0%;
                 justify-content: center;
                 align-items: center;
-                margin-top: 50px;
-                border: red 2px solid;
-
+                margin-top: 40px;
+                margin-bottom: 25px;
             }
 
             h1{
@@ -35,6 +32,7 @@
 
                 @include mobile {
                     font-size: 2rem;
+                    text-align: center;
                 }
                 
             }
@@ -44,6 +42,7 @@
             display: flex;
             flex-direction: row;
             width: 100%;
+
 
             .left-connect{
                 flex: .7;
@@ -79,6 +78,7 @@
                 @include mobile {
                     flex: 1;
                     margin-top: 30px;
+                    margin-right: 0;
                 }
     
                 .connect-me-button{
@@ -113,17 +113,21 @@
             justify-content: center;
             align-content: center;
             bottom: 75px;
-
+    
             @include mobile {
                 justify-content: center;
                 align-items: center;
             }
-
-                       
+    
+                      
             .arrow-image-connect {
                 left: 50%;
                 position: absolute;
                 animation: textBlink 4s infinite; 
+
+                @include mobile {
+                    left: 32.5%;
+                }
         
                 @keyframes textBlink {
                     100%{

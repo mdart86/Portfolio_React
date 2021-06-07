@@ -137,6 +137,11 @@
                         height: 100%;                       
                         object-fit: cover;
                         z-index: 1;
+
+                        @include mobile {
+                            position: absolute;
+                            z-index: 1;
+                        }            
                     }
 
                     &:hover{
@@ -145,7 +150,6 @@
     
                         a {
                             z-index: 2;
-                            position: absolute;     
                         }  
 
                         // p {
@@ -169,11 +173,20 @@
                 overflow: hidden;
                 justify-content: center;
 
+                @include mobile {
+                    overflow: hidden;
+                    padding: 40px;
+                }     
+
 
                 img {
                     width: 100px;
                     height: 100px;
                     margin: 10px;
+
+                    @include mobile {
+                        margin: 5px;
+                    }     
 
                     &:hover {
                         background-color:  rgba(52, 221, 0, 0.87);
@@ -208,6 +221,12 @@
         animation: textBlink 4s infinite; 
         justify-content: center;
         overflow: hidden;
+
+        @include mobile {
+            margin: 5px;
+            padding: 30px;
+        }     
+
 
         @keyframes textBlink {
             100%{
