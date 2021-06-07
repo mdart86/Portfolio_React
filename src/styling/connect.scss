@@ -1,8 +1,17 @@
+@import "./universal.scss";
+
 .connect {
     display: flex;
     flex-direction: row;
     height: 100vh;
     position: relative;
+
+    @include mobile {
+       flex-direction: column;
+       flex-wrap: wrap;
+       margin-top: 50px;
+       border: black 2px solid;
+    }
 
         .connect-heading {
             position: absolute;
@@ -11,10 +20,23 @@
             flex-direction: row;
             left: 42%;       
 
+            @include mobile {
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+                border: red 2px solid;
+
+            }
+
             h1{
                 font-family: 'Chango';
                 color:  rgba(52, 221, 0, 0.87);
                 font-size: 50px;
+
+                @include mobile {
+                    font-size: 2rem;
+                }
+                
             }
         }
 
@@ -37,7 +59,14 @@
                     height: 70%;
                     box-shadow: 0 4px 2px -2px gray;
                 }
+            
+                @include mobile {
+                    display: none;
+                    flex: 0;
+                }
             }
+
+
 
             .right-connect{
                 flex: .3;
@@ -46,6 +75,11 @@
                 justify-content: center;
                 margin-right: 200px;
                 margin-bottom: 50px;
+
+                @include mobile {
+                    flex: 1;
+                    margin-top: 30px;
+                }
     
                 .connect-me-button{
                     display: flex;
@@ -79,6 +113,11 @@
             justify-content: center;
             align-content: center;
             bottom: 75px;
+
+            @include mobile {
+                justify-content: center;
+                align-items: center;
+            }
 
                        
             .arrow-image-connect {
