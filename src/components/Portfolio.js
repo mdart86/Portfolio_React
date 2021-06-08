@@ -55,7 +55,10 @@ useEffect(() => {
 
     return(
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <div className="portfolio-title">
+                <h1>Portfolio</h1>
+            </div>
+            <div className="portfolio-buttons">
                 <ul>
                     {portfolioList.map((item) => (
                         <PortfolioList title={item.title} 
@@ -65,7 +68,7 @@ useEffect(() => {
                         />
                     ))}
                 </ul>
-            
+            </div>
             <div className="portfolio-container">
                 <div className="portfolio-image-container">
                     {portfolioData.map((item) => (

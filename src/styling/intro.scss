@@ -105,7 +105,7 @@
         height: 10vh;
         
             .arrow-image-intro {
-                position: absolute;
+                 position: absolute;
                 bottom: 20px;
                 left: 50%;
                 animation: textBlink 4s infinite; 
@@ -114,6 +114,7 @@
                     position: relative;
                     bottom: 20px;
                     left: 0;
+                    overflow: hidden;
                 }
 
                 @keyframes textBlink {

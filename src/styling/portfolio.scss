@@ -7,38 +7,62 @@
     height: 90vh;
     overflow: hidden;
 
+    @include mobile {
+        width: 100%;
+    }
 
-    h1 {
-        font-family: 'Chango';
-        color:  rgba(52, 221, 0, 0.87);
-        font-size: 50px;
-        padding-bottom: 15px;
+    .portfolio-title{
         overflow: hidden;
 
-        @include mobile {
-            font-size: 2.5rem;
-            margin-top: 50px;
-            padding-bottom: 20px;
+        h1 {
+            font-family: 'Chango';
+            color:  rgba(52, 221, 0, 0.87);
+            font-size: 50px;
+            padding: 15px;
+            overflow: hidden;
+    
+            @include mobile {
+                font-size: 2.5rem;
+                margin-top: 50px;
+                padding-bottom: 30px;
+                overflow: hidden;
+            }
         }
     }
 
-    ul{
-        font-family: 'Gayathri';
-        font-size: 20px;
-        margin: 10px;
-        list-style: none;
-        display: flex;
+    .portfolio-buttons{
         overflow: hidden;
-
+        display: flex;
         
-        @include mobile {
+        @include mobile{
             width: 100%;
-            font-size: 15px;
-            margin: 10px 0;
-            flex-wrap: wrap;
-            flex-direction: row;
             justify-content: center;
+            align-items: center;
+ 
         }
+
+            ul{
+            font-family: 'Gayathri';
+            font-size: 20px;
+            margin: 10px;
+            list-style: none;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+    
+            
+            @include mobile {
+                width: 100%;
+                margin: 0;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+    }
+
 
         // Component: PortfolioList - START
         .portfolio-list{
@@ -52,17 +76,27 @@
             justify-content: center;
             overflow: hidden;
 
+            @include mobile {
+                width: 50px;
+                font-size: 15px;
+                padding: 20px;
+                text-align: center;
+            }
+
 
             &.active{
                 background-color: rgb(43, 43, 255);
                 color: white;
                 transition: all .5 ease;
+                display: flex;
 
                 @include mobile {
                     height: 20px;
                     flex-wrap: wrap;
                     flex-direction: column;
                     justify-content: center;
+                    font-size: 15px;
+                    padding: 20px;
                 }
 
                 &:hover{

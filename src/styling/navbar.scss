@@ -54,9 +54,11 @@
         
             .ityped-text {
                 display: flex;
-                font-size: 40px;
+                font-size: 20px;
                 font-family: 'Gayathri';
                 color: rgb(255, 170, 12);
+                justify-content: center;
+                align-items: center;
 
                 @include mobile {
                     display: none;
@@ -107,6 +109,7 @@
     &.active{
         background-color: rgb(43, 43, 255);
         transition: all 2s ease-out;
+        left: 0;
         
         .title h2 {
             color:white;
