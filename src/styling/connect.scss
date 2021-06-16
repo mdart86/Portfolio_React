@@ -2,20 +2,20 @@
 
 .connect {
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-    position: relative;
+    flex-direction: column;
+    height: 90vh;
+
 
     @include mobile {
        margin-top: 50px;
     }
 
         .connect-heading {
-            position: absolute;
-            margin: 20px;
             display: flex;
-            flex-direction: row;
-            left: 42%;       
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
 
             @include mobile {
                 left: 0%;
@@ -28,7 +28,7 @@
             h1{
                 font-family: 'Chango';
                 color:  rgba(52, 221, 0, 0.87);
-                font-size: 50px;
+                font-size: 4vh;
 
                 @include mobile {
                     font-size: 2rem;
@@ -40,8 +40,8 @@
 
         .connect-content{
             display: flex;
-            flex-direction: row;
             width: 100%;
+            margin: 20px;
 
 
             .left-connect{
@@ -49,9 +49,6 @@
                 overflow: hidden;
                 display: flex;
                 flex-direction: row;
-                margin-bottom: 50px;
-                padding-bottom: 40px;
-
 
                 // align-items: left; move image over to left currently not working
     
@@ -71,13 +68,13 @@
 
 
             .right-connect{
-                flex: .3;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-bottom: 3rem;
-                margin-right: 6rem;
-                padding-bottom: 40px;
+                align-content: center;
+                flex: .3;
+                margin-right: 5%;
+     
 
                 @include mobile {
                     flex: 1;
@@ -87,18 +84,19 @@
     
                 .connect-me-button{
                     display: flex;
+                    justify-content: space-around;
                     align-items: center;
                     width: 275px;
+                    height: 75px;
                     background-color: rgb(43, 43, 255);
                     border: 3px solid rgb(255, 170, 12);
-                    justify-content: space-around;
-                    margin: 10px;
+                    margin: 20px;
                     text-decoration: none;
                     color: white;
                     font-size: 24px;
                     font-family: 'Andika New Basic', sans-serif;
                     border-radius: 10px;
-                    
+                    overflow: hidden;
     
                     &:hover{
                         background-color: white ;
@@ -112,32 +110,31 @@
             }
         }
 
-        .arrow-image-connect {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            bottom: 75px;
+        // .arrow-image-connect {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-content: center;
+        //     bottom: 75px;
     
-            @include mobile {
-                justify-content: center;
-                align-items: center;
-            }
+        //     @include mobile {
+        //         justify-content: center;
+        //         align-items: center;
+        //     }
     
                       
-            .arrow-image-connect {
-                left: 50%;
-                position: absolute;
-                animation: textBlink 4s infinite; 
+        //     .arrow-image-connect {
+        //         left: 50%;
+        //         animation: textBlink 4s infinite; 
 
-                @include mobile {
-                    left: 32.5%;
-                }
+        //         @include mobile {
+        //             left: 32.5%;
+        //         }
         
-                @keyframes textBlink {
-                    100%{
-                    opacity: 0;
-                    }
-                }
-            }
-        }        
+        //         @keyframes textBlink {
+        //             100%{
+        //             opacity: 0;
+        //             }
+        //         }
+        //     }
+        // }        
 }

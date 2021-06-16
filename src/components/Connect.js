@@ -35,9 +35,9 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="arrow-image-connect">
+                    {/* <div className="arrow-image-connect">
                         <a href="#intro"><img src="assets/icons8-collapse-arrow-100.png" alt="arrow" className="arrow-image-connect" /></a>
-                    </div>
+                    </div> */}
         </div>
     )
 }
