@@ -38,7 +38,7 @@
         margin-top: 150px;
         padding: 0;
         list-style: none;
-        font-size: 30px;
+        font-size: 2.75vh;
         color: white;
         width: 60%;
 
@@ -81,6 +81,7 @@
         p{
             color: rgb(255, 170, 12);
             font-family: 'Andika New Basic', sans-serif;
+            font-size: 1.25vh;
             
             @include mobile {
                 font-size: 15px;
