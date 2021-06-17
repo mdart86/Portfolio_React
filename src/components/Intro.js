@@ -12,7 +12,7 @@ const Intro = () => {
             <div className="right-intro">
                 <h1>Welcome</h1>
                     <div className="intro-div">
-                        <p>  From a young age I have been an explorer. While some people read novels, I read Atlases. As I grew older, I started to wonder what it would be like to see these places. That's when I realised it was time to throw away the Atlas and start exploring!                           
+                        <p>  From young age I have been an explorer. While some people read novels, I read Atlases. As I grew older, I started to wonder what it would be like to see these places. That's when I realised it was time to throw away the Atlas and start exploring!                           
                             <br></br>                          
                             <br></br>                          
                             I began travelling... I was hooked! Throughout my travels I have met so many people along the way, some of which are now lifelong friends.  
