@@ -2,7 +2,7 @@ export const PortfolioIntro = [
     {
         id: 1,
         title: "Porfolio Intro", 
-        description: "Since my journey begin in 2020, I have embarked on 3 projects during my course, meeting certain criteria, exploring new concept, each project presented a new challenge. I have ventured into alot of new territories this past year, gaining expernience with technologies whilst building upon my skils. I am looking forward to what the future has to offer!",
+        description: "Since beginning my journey in 2020, I have embarked on four new projects, a portfolio website, a terminal application, a two sided market place and also recreating my portfolio using the desired technology of React. These projects have challenged me conceptually, which has in turn allowed me to gain experience with new technologies and enhance my skills along the way. I am eager to see what the future has to offer in Web Development!",
         img1: "assets/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg",
         link: "https://github.com/mdart86",
     },

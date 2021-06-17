@@ -15,7 +15,7 @@ const TechStack = () => {
             <div className="techstack-title">
                 <h1>Tech</h1>
             </div>            
-            <p>During my adventure with CoderAcademy, I have worked on the following technologies, using various tools to help produce the projects seen in my portfolio</p>
+            <p>During my adventure with CoderAcademy,  I have used the following technologies to assist with various projects seen in my portfolio</p>
                 <div className="techstack-container">
                     <div class="techstackitems">
                         <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-css3-96.png" alt="css-logo" className="techstack-img"  id="css-logo" /></a>
