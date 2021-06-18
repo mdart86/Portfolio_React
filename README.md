@@ -4,9 +4,9 @@
 3. Add text write from bottom left to top write over image to say "connect with me"
 4. Look at possible code Refactor code - to ensure it is DRY including CSS code to make use of Sass
 
-## Deployed to using Netlify
+## Website
 
-[Michael Dart Portfolio](https://epic-meitner-7d6d43.netlify.app/)
+[Michael Dart | Portfolio](https://mickeydee.me/)
 
 
 
