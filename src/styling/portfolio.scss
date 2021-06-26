@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
 
     @include mobile {
@@ -18,7 +18,7 @@
             font-family: 'Chango';
             color:  rgba(52, 221, 0, 0.87);
             font-size: 4vh;
-            padding: 15px;
+            padding: 20px;
             overflow: hidden;
     
             @include mobile {
@@ -114,8 +114,8 @@
     .portfolio-container {
         width: 70%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         overflow: hidden;
@@ -130,19 +130,14 @@
         .portfolio-image-container{
             flex: 0.4;
             overflow: hidden;
-            padding: 2px;
-            margin-bottom: 90px;
-            padding-bottom: 40px;
             display: flex;
+            // align-items: center;
+            // justify-content: center;
+  
 
             .portfolio-banner {
-                width: 400px;
-                height: 350px;
-                border-bottom: 20px;
-                margin: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                width: 300px;
+                height: 250px;          
                 font-family: 'Andika New Basic', sans-serif;
                 color: white;
                 position: relative;
@@ -150,6 +145,7 @@
                 border-radius: 10px;
                 border: 2px solid rgb(211, 206, 206);
                 box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
+                margin-bottom: 25%;
 
                 @include mobile {
                     width: 130px;
@@ -158,7 +154,6 @@
         
         
                 a {
-                    position: relative;
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
@@ -181,7 +176,7 @@
 
                     img {
                         width: 100%;
-                        height: 100%;                       
+                        height: auto;                       
                         object-fit: cover;
                         z-index: 1;
 
@@ -225,7 +220,7 @@
             .portfolio-item-button {
                 overflow: hidden;
                 justify-content: center;
-                padding: 30px;
+                padding: 20px;
 
                 @include mobile {
                     overflow: hidden;
@@ -252,21 +247,21 @@
     .portfolio-details-container {
         flex: 0.6;
         overflow: hidden;
-        padding: 2px;
-        margin-bottom: 100px;
-        padding-bottom: 50px;
+        padding: 5px;
+        margin-bottom: 80px;
+        // padding-bottom: 50px;
         display: flex;
     
         .portfolio-item-details{
             h3 {
-                margin: 5px;
+                margin: 3px;
                 font-family: 'Andika New Basic', sans-serif;
                 text-align: center; 
                 color: rgb(255, 170, 12);
             }
             
             p {
-                margin: 3px;
+                margin: 2px;
                 font-family: 'Andika New Basic', sans-serif;
                 text-align: center;
             }

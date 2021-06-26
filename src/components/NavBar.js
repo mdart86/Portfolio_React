@@ -12,7 +12,7 @@ const NavBar = ( {menuOpen, setMenuOpen} ) => {
         init(textRef.current, {
             showCursor: false,
             backDelay: 2000,
-            strings: ["studying Full-Stack Web Development", "evolving into a Junior Web Developer"]
+            strings: ["Full-Stack Web Developer", "with an eye on making things look amazing!"]
         })
     },[])
 

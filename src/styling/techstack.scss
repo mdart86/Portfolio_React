@@ -2,11 +2,14 @@
 
 .techstack {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
 
     .techstack-title {
         overflow: hidden;
+        text-align: center;
+        padding: 6px;
 
         h1 {
             font-family: 'Chango';
@@ -23,6 +26,7 @@
         font-family: 'Andika New Basic', sans-serif;
         padding: 30px;
         overflow: hidden;
+        text-align: center;
         
             @include mobile {
                 text-align: center;
@@ -33,19 +37,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 50%;
     overflow: hidden;
     }
 
     .techstackitems {
-        width: 65%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        flex: 10%;
         flex-wrap: wrap;
+        text-align: center;
+        padding: 6%;
+
         
         @include mobile {
             width: 95%;
@@ -78,7 +78,7 @@
 
 
     .arrow-image-techstack {
-        margin-bottom: 20px;
+        padding-bottom: 30px;
         animation: textBlink 4s infinite; 
         justify-content: center;
         overflow: hidden;
