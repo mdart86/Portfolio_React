@@ -4,7 +4,9 @@
 
 ## Further Enhancements 
 1. Hover over icon in Tech area to display tech name"
+2. Re-introduce arrow functions in middle of page to navigate to next section
 2. Refactor code to ensure it is DRY
+
 
 
 

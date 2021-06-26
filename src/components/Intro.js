@@ -28,9 +28,9 @@ const Intro = () => {
                             </p>  
                     </div>
             </div>
-            <div className="arrow-image-intro">
+            {/* <div className="arrow-image-intro">
                 <a href="#portfolio"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" className="arrow-image-intro" /></a>          
-            </div>
+            </div> */}
         </div>
    
     )
