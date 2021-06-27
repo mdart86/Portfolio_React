@@ -31,9 +31,9 @@ const TechStack = () => {
                         <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-visual-studio-code-2019-96.png" alt="vscode-logo" className="techstack-img" id="vscode-logo" /></a>
                     </div>
                 </div>
-            <div className="arrow-image-techstack">
+            {/* <div className="arrow-image-techstack">
                 <a href="#connect"><img src="assets/icons8-expand-arrow-100.png" alt="arrow" /></a>
-            </div>
+            </div> */}
         </div>
     )
 }
