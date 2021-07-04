@@ -14,6 +14,8 @@
     .left-intro {
         flex: 0.4;
         overflow: hidden;
+        margin-top: 10vh;
+
         
         @include mobile {
             flex-direction: column;
@@ -35,7 +37,6 @@
 
 
         .image-container{
-            // margin-top: 15%;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -67,12 +68,25 @@
     }
 
     .right-intro {
-        flex: 0.4;
-        width: 100%;
-        margin-top: 15vh;
+        margin-top: 5vh;
+        flex: 0.5;
+        position: relative;
+        justify-content: center;
+        align-items: center;
 
         @include mobile {
             margin-top: 5px;
+        }
+
+        h1 {
+            font-family: 'Andika New Basic', sans-serif;
+            color:  rgba(52, 221, 0, 0.87);
+            font-size: 4vh;
+
+            @include mobile {
+                font-size: 2.5rem;
+                text-align: center;
+            }
         }
 
         .intro-div {

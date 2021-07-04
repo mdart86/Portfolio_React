@@ -5,7 +5,6 @@
     flex-direction: column;
     height: 90vh;
 
-
     @include mobile {
        margin-top: 50px;
     }
@@ -16,6 +15,7 @@
             align-items: center;
             text-align: center;
             margin: 10px;
+            
 
             @include mobile {
                 left: 0%;
@@ -26,7 +26,7 @@
             }
 
             h1{
-                font-family: 'Gayathri';
+                font-family: 'Andika New Basic', sans-serif;
                 color:  rgba(52, 221, 0, 0.87);
                 font-size: 6vh;
                 font-weight: 900;
@@ -41,82 +41,83 @@
 
         .connect-content{
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            margin: 20px;
+            left: 50;
 
-
-            .left-connect{
-                flex: .7;
-                overflow: hidden;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-content: center;
-
-                // align-items: left; move image over to left currently not working
-    
-                img {
-                    border-radius: 15px;
-                    margin-top: 10%;
-                    // margin: 175px 100px 100px 100px;
-                    // margin top bottom right left
-                    width: 40vw;
-                    height: 40vh;
-                    box-shadow: 0 4px 2px -2px gray;
-                    justify-content: center;
-                }
-            
-                @include mobile {
-                    display: none;
-                    flex: 0;
-                }
+            @include mobile {
+                flex-direction: column;
+                text-align: center;
             }
 
+            // .left-connect{
+            //     flex: .7;
+            //     overflow: hidden;
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: center;
+            //     align-content: center;
+
+            //     // align-items: left; move image over to left currently not working
+    
+            //     img {
+            //         border-radius: 15px;
+            //         margin: 175px 50px 100px 100px;
+            //         // margin top bottom right left
+            //         width: 700px;
+            //         height: auto;
+            //         box-shadow: 0 4px 2px -2px gray;
+            //     }
+            
+            //     @include mobile {
+            //         display: none;
+            //         flex: 0;
+            //     }
+            // }
 
 
-            .right-connect{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                flex: .3;
-                margin-right: 10%;
+
+            // .right-connect{
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-content: center;
+            //     flex: .3;
+            //     margin-right: 5%;
      
 
-                @include mobile {
-                    flex: 1;
-                    margin-top: 30px;
-                    margin-right: 0;
-                }
+            //     @include mobile {
+            //         flex: 1;
+            //         margin-top: 30px;
+            //         margin-right: 0;
+            //     }
     
-                .connect-me-button{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    width: 275px;
-                    height: 100px;
-                    background-color: rgb(43, 43, 255);
-                    border: 3px solid rgb(255, 170, 12);
-                    margin: 20px;
-                    text-decoration: none;
-                    color: white;
-                    font-size: 24px;
-                    font-family: 'Andika New Basic', sans-serif;
-                    border-radius: 10px;
-                    overflow: hidden;
-    
-                    &:hover{
-                        background-color: white ;
-                        color: rgb(255, 170, 12);
-                        transition: transform .75s ease-out;
-                        cursor: pointer;
-                    }
-                    
-                    
+            .connect-me-button{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 275px;
+                height: 100px;
+                background-color: rgb(43, 43, 255);
+                border: 3px solid rgb(255, 170, 12);
+                margin: 20px;
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+                font-family: 'Andika New Basic', sans-serif;
+                border-radius: 10px;
+                overflow: hidden;
+
+                &:hover{
+                    background-color: white ;
+                    color: rgb(255, 170, 12);
+                    transition: transform .75s ease-out;
+                    cursor: pointer;
                 }
             }
         }
-
         // .arrow-image-connect {
         //     display: flex;
         //     justify-content: center;
