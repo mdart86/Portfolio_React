@@ -28,7 +28,7 @@
             h1{
                 font-family: 'Andika New Basic', sans-serif;
                 color:  rgba(52, 221, 0, 0.87);
-                font-size: 6vh;
+                font-size: 5vh;
                 font-weight: 900;
 
                 @include mobile {
@@ -110,12 +110,18 @@
                 border-radius: 10px;
                 overflow: hidden;
 
+                @include mobile {
+                    text-align: center;
+                }
+    
+
                 &:hover{
                     background-color: white ;
                     color: rgb(255, 170, 12);
                     transition: transform .75s ease-out;
                     cursor: pointer;
                 }
+
             }
         }
         // .arrow-image-connect {

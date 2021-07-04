@@ -21,13 +21,14 @@ const Menu = ( {menuOpen, setMenuOpen} ) => {
                 </li>         
             </ul>      
             <div className="copyright">
+                <p>This website is fully responsive across all devices</p>
+                <p>---------</p>
                 <p>Copyright &copy;</p>
                 <p>Michael Dart, 2021</p>
                 <p>---------</p>
                 <p>Thank you to <a href="https://icons8.com/">Icons 8</a></p>
                 <p>for the free icons used here.</p>
                 <p>---------</p>
-                <p class="under-constuction">Tablet and Mobile views are <em><strong>Under Construction</strong></em></p>
             </div>              
         </div>
     )

@@ -3,10 +3,10 @@
 [Michael Dart | Portfolio](https://mickeydee.me/)
 
 ## Further Enhancements 
-1. Hover over icon in Tech area to display tech name"
-2. Re-introduce arrow functions in middle of page to navigate to next section
-3. Ensure mobile view is correct with Portfolio so Image is behind menu when active
-4. Refactor code to ensure it is DRY
+
+1. Re-introduce arrow functions in middle of page to navigate to next section
+2. Hover over icon in Tech area to display tech name
+3. Refactor code to ensure it is DRY
 
 
 

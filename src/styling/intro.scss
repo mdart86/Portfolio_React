@@ -20,20 +20,7 @@
         @include mobile {
             flex-direction: column;
         }
-
-        h1 {
-            font-family: 'Gayathri';
-            color:  rgba(52, 221, 0, 0.87);
-            font-size: 6vh;
-            font-weight: 900;
-            // margin: 10px 0;
-            text-align: center;
-
-            @include mobile {
-                font-size: 2.5rem;
-                text-align: center;
-            }
-        }
+    }
 
 
         .image-container{
@@ -60,7 +47,7 @@
                 box-shadow: 0 4px 2px -2px gray;
 
                 @include mobile {
-                    width: 300px;
+                    width: 250px;
                     height: auto;
                 }
             }
@@ -81,7 +68,8 @@
         h1 {
             font-family: 'Andika New Basic', sans-serif;
             color:  rgba(52, 221, 0, 0.87);
-            font-size: 4vh;
+            font-size: 5vh;
+            font-weight: 900;
 
             @include mobile {
                 font-size: 2.5rem;
@@ -141,5 +129,5 @@
                 justify-content: center;
                 margin-top: 10px;           
             }
-    }
+    
     

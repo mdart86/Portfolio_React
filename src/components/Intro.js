@@ -5,13 +5,13 @@ const Intro = () => {
     return(
         <div className="intro" id="intro">
             <div className="left-intro">
-            <h1>Welcome</h1>
                 <div className="image-container">
                     <img src="assets/me.png" alt="me-in-vancouver"/>
                 </div>
             </div>
             <div className="right-intro">
                     <div className="intro-div">
+                        <h1>Welcome</h1>
                         <p>  From a young age I have been an explorer. While some people read novels, I read Atlases. As I grew older, I started to wonder what it would be like to see these places. That's when I realised it was time to throw away the Atlas and start exploring!                           
                             <br></br>                          
                             <br></br>                          
