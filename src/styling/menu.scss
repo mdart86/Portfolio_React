@@ -60,7 +60,7 @@
     }
     
         @include mobile {
-           font-size: 25px;
+           font-size: 1.75vh;
            margin-top: 125px;
         }
     }
@@ -87,7 +87,7 @@
             font-size: 1.75vh;
             
             @include mobile {
-                font-size: 15px;
+                font-size: 1.05vh;
             }
         }
 
