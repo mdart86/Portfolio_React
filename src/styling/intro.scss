@@ -9,16 +9,19 @@
     @include mobile {
         flex-direction: column;
         align-items: center;
+        margin-top: 2vh;
+    
     }
 
     .left-intro {
         flex: 0.4;
         overflow: hidden;
-        margin-top: 10vh;
+        margin-top: 3vh;
 
         
         @include mobile {
             flex-direction: column;
+            margin-bottom: 2vh;
         }
     }
 
@@ -33,7 +36,6 @@
             
             @include mobile {
                 align-items: flex-start;
-                margin-top: 150px;
                 padding-bottom: 10px;
             }
 
@@ -49,6 +51,8 @@
                 @include mobile {
                     width: 250px;
                     height: auto;
+                    margin-bottom: 1vh;
+
                 }
             }
         }
